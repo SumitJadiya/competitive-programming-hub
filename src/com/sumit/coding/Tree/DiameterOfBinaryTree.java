@@ -11,39 +11,34 @@ class Node {
     }
 }
 
+class Height {
+    int h;
+}
+
 class BinaryTree {
     Node root;
 
-    private static int height(Node node) {
-        if (node == null)
-            return 0;
-
-        return (1 + Math.max(height(node.left), height(node.right)));
-    }
-
     public int diameter() {
-        return diameter(root);
+        Height height = new Height();
+        return diameterOpt(root, height);
     }
 
-    private int diameter(Node root) {
+    private int diameterOpt(Node root, Height height) {
 
-        if (root == null)
+        Height lheight = new Height();
+        Height rheight = new Height();
+
+        if (root == null) {
+            height.h = 0;
             return 0;
+        }
 
-        int lheight = height(root.left);
-        int rheight = height(root.right);
+        int ldiameter = diameterOpt(root.left, lheight);
+        int rdiameter = diameterOpt(root.right, rheight);
 
-        int ldiameter = diameter(root.left);
-        int rdiameter = diameter(root.right);
+        height.h = Math.max(lheight.h, rheight.h) + 1;
 
-        /*
-         * Return Max of
-         * a) Diameter of left subtree.
-         * b) Diameter of right subtree.
-         * c) height of left + right subtree.
-         */
-
-        return Math.max(lheight + rheight + 1, Math.max(ldiameter, rdiameter));
+        return Math.max(lheight.h + rheight.h + 1, Math.max(ldiameter, rdiameter));
     }
 }
 
