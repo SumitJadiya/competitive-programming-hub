@@ -11,10 +11,23 @@ public class EvaluateExpression {
     public static void main(String[] args) {
 
         String expression = "+9*26";
-        System.out.println(evaluatePrefixExpression(expression));
 
-        expression = "231*+9-";
-        System.out.println(evaluatePostfixExpression(expression));
+        int result = evaluatePrefixExpression(expression);
+
+        if (result == Integer.MIN_VALUE)
+            System.out.println("The Expression input is incorrect");
+        else
+            System.out.println(result);
+
+        expression = "82+5-77+"; // "23+5-"
+
+        result = evaluatePostfixExpression(expression);
+
+        if (result == Integer.MIN_VALUE)
+            System.out.println("The Expression input is incorrect");
+        else
+            System.out.println(result);
+
     }
 
     private static int evaluatePostfixExpression(String expression) {
@@ -23,6 +36,9 @@ public class EvaluateExpression {
             temp = expression.charAt(i);
             evaluateExpression(temp);
         }
+
+        if (stack.size() != 1)
+            return Integer.MIN_VALUE;
 
         return stack.pop();
     }
@@ -34,6 +50,9 @@ public class EvaluateExpression {
             evaluateExpression(temp);
         }
 
+        if (stack.size() != 1)
+            return Integer.MIN_VALUE;
+
         return stack.pop();
     }
 
@@ -42,8 +61,10 @@ public class EvaluateExpression {
         if (Character.isDigit(temp)) {
             stack.push(Character.getNumericValue(temp));
         } else {
-            a = stack.pop();
-            b = stack.pop();
+            if (!stack.isEmpty())
+                a = stack.pop();
+            if (!stack.isEmpty())
+                b = stack.pop();
 
             switch (temp) {
                 case '+':
@@ -58,7 +79,6 @@ public class EvaluateExpression {
                 case '/':
                     stack.push(b / a);
                     break;
-
             }
         }
 
