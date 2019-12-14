@@ -1,6 +1,6 @@
 package com.sumit.coding.queue;
 
-class Queue {
+class MyQueue {
 
     int capacity;
     int size;
@@ -8,7 +8,7 @@ class Queue {
     int rear;
     int[] arr;
 
-    public Queue(int capacity) {
+    public MyQueue(int capacity) {
         this.capacity = capacity;
         this.size = 0;
         this.front = 0;
@@ -77,7 +77,7 @@ public class QueueImplementationUsingArray {
 
     public static void main(String[] args) {
 
-        Queue queue = new Queue(10);
+        MyQueue queue = new MyQueue(10);
         queue.enqueue(1);
         queue.enqueue(2);
         queue.enqueue(3);
