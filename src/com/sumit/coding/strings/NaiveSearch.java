@@ -4,8 +4,8 @@ public class NaiveSearch {
 
     public static void main(String[] args) {
 
-        final String txt = "AABAACAAVAABAAABAA";
-        final String pat = "AABA";
+        final String txt = "lkjsdfhaiuehaoewiuraoikdehjakdsfhlsjdkihalieushralkehfailuewhfaklfjsdhfliuewahf";
+        final String pat = "ahf";
 
         System.out.print("Pattern found at index -> ");
         NaiveSearch.search(txt, pat);
@@ -16,7 +16,7 @@ public class NaiveSearch {
         int n = txt.length();
         int m = pat.length();
 
-        for (int i = 0; i < n - m; i++) {
+        for (int i = 0; i <= n - m; i++) {
 
             int j;
             for (j = 0; j < m; j++)
