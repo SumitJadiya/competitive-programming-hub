@@ -50,7 +50,6 @@ public class AddOneToNumber {
 
             if (n - i - 1 == 0 && carry == 1) {
                 A.add(0, 1);
-
             }
             i++;
         }
