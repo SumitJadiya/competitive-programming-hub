@@ -30,16 +30,11 @@ public class StringsIntroduction {
         System.out.println("Index of a = " + s4.indexOf('a', 3));
 
         // Checking equality of Strings
-        Boolean out = "Geeks".equals("geeks");
-        System.out.println("Checking Equality " + out);
-        out = "Geeks".equals("Geeks");
-        System.out.println("Checking Equality " + out);
+        System.out.println("Checking Equality " + "Geeks".equals("geeks"));
+        System.out.println("Checking Equality " + "Geeks".equals("Geeks"));
+        System.out.println("Checking Equality " + "Geeks".equalsIgnoreCase("gEeks "));
 
-        out = "Geeks".equalsIgnoreCase("gEeks ");
-        System.out.println("Checking Equality " + out);
-
-        int out1 = s1.compareTo(s2);
-        System.out.println("If s1 = s2 " + out);
+        System.out.println("If s1 = s2 " + s1.compareTo(s2));
 
         // Converting cases
         String word1 = "GeeKyMe";
@@ -55,5 +50,16 @@ public class StringsIntroduction {
         System.out.println("Original String " + str1);
         String str2 = "feeksforfeeks".replace('f', 'g');
         System.out.println("Replaced f with g -> " + str2);
+
+        System.out.println(getRotated("ABCAB", 3));
+    }
+
+    private static String getRotated(String A, int x) {
+
+        int len = A.length();
+        String front = A.substring(0, len - x);
+        String back = A.substring(len - x, len);
+
+        return back + front;
     }
 }
