@@ -1,7 +1,10 @@
 /bin/
 out/
 target/
-*.class
+*.nar
+*.zip
+*.tar.gz
+*.rar
 *.jar
 *.war
 *.ear
@@ -9,3 +12,13 @@ target/
 *.iml
 .idea/
 .eclipse
+*.class
+*.log
+*.ctxt
+.mtj.tmp/
+.DS_Store
+.classpath
+.project
+.settings/
+log/
+target/
