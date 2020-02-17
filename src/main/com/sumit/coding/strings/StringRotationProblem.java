@@ -14,7 +14,7 @@ public class StringRotationProblem {
         System.out.println("String is rotated " + result);
     }
 
-    private static boolean checkStringRotation(String string1, String string2) {
+    public static boolean checkStringRotation(String string1, String string2) {
         if (string1.length() != string2.length())
             return false;
 
@@ -23,7 +23,7 @@ public class StringRotationProblem {
         return temp.contains(string2);
     }
 
-    private static boolean checkStringRotatedByTwoPlaces(String s1, String s2) {
+    public static boolean checkStringRotatedByTwoPlaces(String s1, String s2) {
 
         if (s1.length() != s2.length())
             return false;
