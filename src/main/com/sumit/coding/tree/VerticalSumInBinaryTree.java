@@ -1,4 +1,4 @@
-package main.com.sumit.coding.Tree;
+package main.com.sumit.coding.tree;
 
 import java.util.Map;
 import java.util.TreeMap;
