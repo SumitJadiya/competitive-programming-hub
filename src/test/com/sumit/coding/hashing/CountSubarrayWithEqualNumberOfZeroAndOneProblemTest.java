@@ -18,13 +18,13 @@ public class CountSubarrayWithEqualNumberOfZeroAndOneProblemTest {
     }
 
     @Test
-    public void test_checkZeroSum_array1() {
+    public void test_CountSubarrayWithEqualNumberOfZeroAndOneProblem_array1() {
         int[] arr = {1,0, 0, 1, 0, 1, 1};
         Assert.assertEquals(8, countSubarrayWithEqualNumberOfZeroAndOneProblem.countSubarray(arr));
     }
 
     @Test
-    public void test_checkZeroSum_array2() {
+    public void test_CountSubarrayWithEqualNumberOfZeroAndOneProblem_array2() {
         int[] arr = {1, 1, 1, 1, 0};
         Assert.assertEquals(1,countSubarrayWithEqualNumberOfZeroAndOneProblem.countSubarray(arr));
     }
