@@ -1,16 +1,18 @@
 package main.com.sumit.coding.arrays;
 
+import java.util.ArrayList;
+import java.util.Arrays;
 import java.util.List;
 import java.util.stream.Collectors;
 
 public class SquareAndSortNumbersProblem {
 
     public static void main(String[] args) {
-        List<Integer> list = List.of(-6, -3, -1, 2, 4, 5);
+        List<Integer> list = new ArrayList<>(Arrays.asList(-6, -3, -1, 2, 4, 5));
         list = (new SquareAndSortNumbersProblem()).squareAndSort(list);
 
         for (int i : list)
-            System.out.println(i);
+            System.out.print(i + " ");
     }
 
     public List<Integer> squareAndSort(List<Integer> list) {
