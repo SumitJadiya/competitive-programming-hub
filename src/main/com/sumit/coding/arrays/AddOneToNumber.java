@@ -20,6 +20,10 @@ public class AddOneToNumber {
         arr.add(5);
         arr.add(5);
         System.out.println(new AddOneToNumber().plusOne(arr));
+
+        int[] digits = {1,2,3};
+        int[] result = new AddOneToNumber().plusOne(digits);
+        for (int i:result) System.out.println(i);
     }
 
     private List<Integer> plusOne(List<Integer> A) {
@@ -54,5 +58,17 @@ public class AddOneToNumber {
             i++;
         }
         return A;
+    }
+
+    public int[] plusOne(int[] digits) {
+
+        for (int i = digits.length - 1; i >= 0; i--) {
+            digits[i]++;
+            digits[i] = digits[i] % 10;
+            if (digits[i] != 0) return digits;
+        }
+        digits = new int[digits.length + 1];
+        digits[0] = 1;
+        return digits;
     }
 }

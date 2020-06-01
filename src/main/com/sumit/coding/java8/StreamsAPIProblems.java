@@ -25,6 +25,7 @@ public class StreamsAPIProblems {
 
     public static void main(String[] args) {
 
+/*
         StreamsAPIProblems streamsAPIProblems = new StreamsAPIProblems();
 
         System.out.println("-------------Circuit Operations------------");
@@ -48,6 +49,10 @@ public class StreamsAPIProblems {
         System.out.println("-------------Limit Operations--------------");
         System.out.println();
         streamsAPIProblems.limitSortCircuitOperation();
+
+*/
+
+        System.out.println(Locale.forLanguageTag("de-CH"));
     }
 
     private void circuitOperations() {
