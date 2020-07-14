@@ -21,4 +21,5 @@ target/
 .project
 .settings/
 log/
+.gradle/*
 target/
