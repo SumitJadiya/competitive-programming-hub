@@ -5,11 +5,11 @@ import java.util.HashMap;
 import java.util.List;
 import java.util.Map;
 
-public class Problem18 {
+public class Problem17 {
 
     public static void main(String[] args) {
         String s = "AAAAACCCCCAAAAACCCCCCAAAAAGGGTTT";
-        System.out.println(new Problem18().findRepeatedDnaSequences(s));
+        System.out.println(new Problem17().findRepeatedDnaSequences(s));
     }
 
     public List<String> findRepeatedDnaSequences(String s) {
