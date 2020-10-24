@@ -3,7 +3,7 @@ package main.com.sumit.coding.linkedList;
 class Node {
 
     int val;
-    Node next;
+    protected Node next;
 
     public Node(int val) {
         this.val = val;

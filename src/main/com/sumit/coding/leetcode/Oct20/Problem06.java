@@ -8,88 +8,88 @@ public class Problem06 {
 
     public static void main(String[] args) {
         int val = 25;
-        TreeNode root = new TreeNode(4);
-        root.setLeft(new TreeNode(2));
-        root.setRight(new TreeNode(7));
-        root.left.setLeft(new TreeNode(1));
-        root.left.setRight(new TreeNode(3));
+        TreeNode06 root = new TreeNode06(4);
+        root.setLeft(new TreeNode06(2));
+        root.setRight(new TreeNode06(7));
+        root.leftNode.setLeft(new TreeNode06(1));
+        root.leftNode.setRight(new TreeNode06(3));
 
         new Problem06().preOrder(new Problem06().insertIntoBST(root, val));
     }
 
-    public TreeNode insertIntoBST(TreeNode root, int val) {
+    public TreeNode06 insertIntoBST(TreeNode06 root, int val) {
 
         if (root == null)
-            root = new TreeNode(val);
+            root = new TreeNode06(val);
         else
             insertBST(root, val);
 
         return root;
     }
 
-    public void insertBST(TreeNode root, int val) {
+    public void insertBST(TreeNode06 root, int val) {
 
-        if (root.val > val) {
-            if (root.left == null)
-                root.left = new TreeNode(val);
+        if (root.value > val) {
+            if (root.leftNode == null)
+                root.leftNode = new TreeNode06(val);
             else
-                insertBST(root.left, val);
+                insertBST(root.leftNode, val);
         } else {
-            if (root.right == null)
-                root.right = new TreeNode(val);
+            if (root.rightNode == null)
+                root.rightNode = new TreeNode06(val);
             else
-                insertBST(root.right, val);
+                insertBST(root.rightNode, val);
         }
     }
 
-    private void preOrder(TreeNode node) {
+    private void preOrder(TreeNode06 node) {
         if (node == null)
             return;
 
         /* then print the data of node */
-        System.out.printf("%d ", node.val);
+        System.out.printf("%d ", node.value);
 
         /* first recur on left child */
-        preOrder(node.left);
+        preOrder(node.leftNode);
 
         /* now recur on right child */
-        preOrder(node.right);
+        preOrder(node.rightNode);
     }
 }
 
-class TreeNode {
-    int val;
-    TreeNode left;
-    TreeNode right;
+class TreeNode06 {
+    int value;
+    TreeNode06 leftNode;
+    TreeNode06 rightNode;
 
-    TreeNode() { }
-    TreeNode(int val) { this.val = val; }
-    TreeNode(int val, TreeNode left, TreeNode right) {
-        this.val = val;
-        this.left = left;
-        this.right = right;
+    TreeNode06(int val) { this.value = val; }
+
+    TreeNode06(int val, TreeNode06 left, TreeNode06 right) {
+        this.value = val;
+        this.leftNode = left;
+        this.rightNode = right;
     }
 
-    public TreeNode getLeft() {
-        return left;
+    public TreeNode06 getLeft() {
+        return leftNode;
     }
 
-    public void setLeft(TreeNode left) {
-        this.left = left;
+    public void setLeft(TreeNode06 left) {
+        this.leftNode = left;
     }
 
-    public TreeNode getRight() {
-        return right;
+    public TreeNode06 getRight() {
+        return rightNode;
     }
 
-    public void setRight(TreeNode right) {
-        this.right = right;
+    public void setRight(TreeNode06 right) {
+        this.rightNode = right;
     }
 
-    private static <T> StringBuilder toString(StringBuilder string, TreeNode node) {
+    private static <T> StringBuilder toString(StringBuilder string, TreeNode06 node) {
         string.append('{');
         if (node != null) {
-            string.append(node.val);
+            string.append(node.value);
             toString(string.append(", "), node.getLeft());
             toString(string.append(", "), node.getRight());
         }

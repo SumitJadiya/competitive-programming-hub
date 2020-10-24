@@ -11,7 +11,7 @@ public class TrieNode {
      * @param c input character
      * @return trienode
      */
-    public TrieNode next(final char c) {
+    protected TrieNode next(final char c) {
         return trieNodes[c - 'a'];
     }
 }

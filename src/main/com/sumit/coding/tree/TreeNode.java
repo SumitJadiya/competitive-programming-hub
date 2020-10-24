@@ -3,9 +3,9 @@ package main.com.sumit.coding.tree;
 public class TreeNode {
 
     int key;
-    TreeNode left;
-    TreeNode right;
-    TreeNode node;
+    protected TreeNode left;
+    protected TreeNode right;
+    protected TreeNode node;
 
     TreeNode(int x) {
         key = x;
