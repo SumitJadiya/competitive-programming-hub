@@ -135,6 +135,9 @@ public class PerfectSquaresProblem {
         System.out.println(new PerfectSquaresProblem().numSquares(130) + " " + 130);
     }
 
+    /*
+    Using Maths
+
     public int numSquares(int n) {
 
         while (n % 4 == 0) n /= 4;
@@ -153,5 +156,27 @@ public class PerfectSquaresProblem {
     public boolean isSquare(int n) {
         int sq = (int) Math.sqrt(n);
         return n == sq * sq;
+    }
+    */
+
+    // Using Memoization -> DP
+    public int numSquares(int n) {
+
+        int[] memo = new int[n + 1];
+        return fetchSquaresRecursively(n, memo);
+    }
+
+    public int fetchSquaresRecursively(int n, int[] memo) {
+
+        if (n == 0) return 0;
+        int min = n;
+
+        if (memo[n] > 0) return memo[n];
+
+        for (int i = 1; i * i <= n; i++)
+            min = Math.min(fetchSquaresRecursively(n - i * i, memo), min);
+
+        memo[n] = min + 1;
+        return min + 1;
     }
 }
