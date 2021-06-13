@@ -13,7 +13,9 @@ Note: The length of temperatures will be in the range [1, 30000]. Each temperatu
 public class DailyTemperatureProblem {
 
     public static void main(String[] args) {
-        int[] arr = {73, 74, 75, 71, 69, 72, 76, 73};
+        int[] arr = {1,2,3,4,5,6};
+
+//        int[] arr = {73, 74, 75, 71, 69, 72, 76, 73};
         System.out.println(Arrays.toString(new DailyTemperatureProblem().dailyTemperatures(arr)));
     }
 
