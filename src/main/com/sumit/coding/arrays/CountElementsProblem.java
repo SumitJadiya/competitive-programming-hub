@@ -5,6 +5,8 @@ import java.util.TreeMap;
 
 /**
  * Problem URL:
+ * Given an integer array arr, count how many elements x there are, such that x + 1 is also in arr.
+ * If there are duplicates in arr, count them separately.
  * https://leetcode.com/explore/challenge/card/30-day-leetcoding-challenge/528/week-1/3289/
  */
 public class CountElementsProblem {
