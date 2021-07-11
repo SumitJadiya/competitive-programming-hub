@@ -11,7 +11,7 @@ Output: [1,3,3,1]
 
 Input: rowIndex = 3
 Output: [1,3,3,1]
- */
+*/
 public class PascalTriangleII {
 
     public static void main(String[] args) {
