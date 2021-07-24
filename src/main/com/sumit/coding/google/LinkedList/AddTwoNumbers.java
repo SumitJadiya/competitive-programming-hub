@@ -7,23 +7,6 @@ package main.com.sumit.coding.google.LinkedList;
     Output: [7,0,8]
     Explanation: 342 + 465 = 807.
 */
-class ListNode {
-    int val;
-    ListNode next;
-
-    ListNode() {
-    }
-
-    ListNode(int val) {
-        this.val = val;
-    }
-
-    ListNode(int val, ListNode next) {
-        this.val = val;
-        this.next = next;
-    }
-}
-
 public class AddTwoNumbers {
 
     public static void main(String[] args) {
@@ -35,7 +18,7 @@ public class AddTwoNumbers {
         l2.next = new ListNode(6);
         l2.next.next = new ListNode(4);
 
-        printLinkedList(addTwoNumbers(l1, l2));
+        ListNode.printLinkedList(addTwoNumbers(l1, l2));
     }
 
     public static ListNode addTwoNumbers(ListNode l1, ListNode l2) {
@@ -53,13 +36,5 @@ public class AddTwoNumbers {
             l2 = (l2 == null ? null : l2.next);
         }
         return preHead.next;
-    }
-
-    private static void printLinkedList(ListNode head) {
-
-        while (head != null) {
-            System.out.print(head.val + " ");
-            head = head.next;
-        }
     }
 }
