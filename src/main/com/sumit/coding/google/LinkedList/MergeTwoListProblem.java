@@ -4,7 +4,6 @@ package main.com.sumit.coding.google.LinkedList;
  * Problem URL : https://leetcode.com/problems/merge-two-sorted-lists/
  * Input: l1 = [1,2,4], l2 = [1,3,4]
  * Output: [1,1,2,3,4,4]
- *
  * */
 public class MergeTwoListProblem {
 
@@ -25,6 +24,10 @@ public class MergeTwoListProblem {
         ListNode.printLinkedList(mergeTwoLists(l1, l2));
     }
 
+    /*
+     * Time Complexity O(N+M)
+     * Space Complexity O(1)
+     * */
     public static ListNode mergeTwoLists(ListNode l1, ListNode l2) {
         if (l1 == null && l2 == null) return null;
 

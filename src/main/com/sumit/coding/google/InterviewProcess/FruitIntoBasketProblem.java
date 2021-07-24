@@ -5,6 +5,8 @@ package main.com.sumit.coding.google.InterviewProcess;
   Input: fruits = [3,3,3,1,2,1,1,2,3,3,4]
   Output: 5
   Explanation: We can pick from trees [1,2,1,1,2].
+
+  Solution : O(N)
 * */
 public class FruitIntoBasketProblem {
 
@@ -14,7 +16,7 @@ public class FruitIntoBasketProblem {
     }
 
     // a | b | c
-    // second fruit | first fruit | new fruit
+    // secondLastFruit | lastFruit | newFruit
     public static int totalFruit(int[] tree) {
 
         int lastFruit = -1;

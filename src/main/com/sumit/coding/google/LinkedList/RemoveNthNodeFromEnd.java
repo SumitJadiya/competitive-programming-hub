@@ -19,6 +19,10 @@ public class RemoveNthNodeFromEnd {
         ListNode.printLinkedList(removeNthFromEnd(node, n));
     }
 
+    /*
+     * O(L) time complexity
+     * O(1) space complexity
+     * */
     public static ListNode removeNthFromEnd(ListNode head, int n) {
         ListNode dummy = new ListNode(0);
         dummy.next = head;
