@@ -56,11 +56,11 @@ public class WordLadderProblem {
     }
 
     /*
-        Time Complexity: O(M2×N) where MM is the length of words and NN is the total number of words in the input word list.
-        Similar to one directional, bidirectional also takes O(M 2×N) time for finding out all the transformations.
+        Time Complexity: O(M2×N) where M is the length of words and N is the total number of words in the input word list.
+        Similar to one directional, bidirectional also takes O(M2×N) time for finding out all the transformations.
         But the search time reduces to half, since the two parallel searches meet somewhere in the middle.
 
-        Space Complexity: O(M2×N), to store all MM transformations for each of the NN words in the all_combo_dict dictionary, same as one directional.
+        Space Complexity: O(M2×N), to store all M transformations for each of the NN words in the all_combo_dict dictionary, same as one directional.
         But bidirectional reduces the search space. It narrows down because of meeting in the middle.
     */
     public int ladderLength(String beginWord, String endWord, List<String> wordList) {
