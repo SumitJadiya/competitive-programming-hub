@@ -5,6 +5,9 @@ import java.util.Queue;
 
 /*
  * Problem URL : https://leetcode.com/problems/number-of-islands/
+ *
+ * Input: grid = [["1","1","1","1","0"],["1","1","0","1","0"],["1","1","0","0","0"],["0","0","0","0","0"]]
+ * Output: 1
  * */
 public class NumberOfIslandProblem {
 
@@ -17,6 +20,13 @@ public class NumberOfIslandProblem {
         };
 
         System.out.println(new NumberOfIslandProblem().numIslands_dfs(grid));
+
+        grid = new char[][]{
+                {'1', '1', '1', '1', '0'},
+                {'1', '1', '0', '1', '0'},
+                {'1', '1', '0', '0', '0'},
+                {'0', '0', '0', '0', '0'}
+        };
         System.out.println(new NumberOfIslandProblem().numIslands_bfs(grid));
     }
 
@@ -65,9 +75,8 @@ public class NumberOfIslandProblem {
      * O(min(M,N)) because in worst case where the grid is filled with lands, the size of queue can grow up to min(M,N).
      * */
     public int numIslands_bfs(char[][] grid) {
-        if (grid == null || grid.length == 0) {
+        if (grid == null || grid.length == 0)
             return 0;
-        }
 
         int nr = grid.length;
         int nc = grid[0].length;
