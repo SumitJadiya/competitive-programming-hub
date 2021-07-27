@@ -5,6 +5,9 @@ import java.util.LinkedList;
 import java.util.List;
 import java.util.Map;
 
+/*
+* Problem URL : https://leetcode.com/problems/course-schedule/solution/
+* */
 public class CourseScheduleI {
 
     public static void main(String[] args) {
