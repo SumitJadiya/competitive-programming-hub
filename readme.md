@@ -18,6 +18,7 @@ Competitive Programming Codebase
         - <a href="src/main/com/sumit/coding/google/arraysAndStrings/MinimumWindowSubstringProblem.java">Minimum Window Substring</a>
         - <a href="src/main/com/sumit/coding/google/arraysAndStrings/LongestSubstringWithAtMostTwoDistinctCharactersProblem.java">Longest Substring With At Most Two Distinct Characters</a>
         - <a href="src/main/com/sumit/coding/google/arraysAndStrings/MissingRangesProblem.java">Missing Ranges</a>
+        - <a href="src/main/com/sumit/coding/google/arraysAndStrings/NextClosestTimeProblem.java">Next Closest Time</a>
     * Linked List [4 questions]
         - <a href="src/main/com/sumit/coding/google/LinkedList/AddTwoNumbers.java">Add Two Numbers</a>
         - <a href="src/main/com/sumit/coding/google/LinkedList/MergeTwoListProblem.java">Merge Two LinkedList</a>
