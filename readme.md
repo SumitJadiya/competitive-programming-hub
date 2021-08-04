@@ -6,7 +6,7 @@ Competitive Programming Codebase
         - <a href="src/main/com/sumit/coding/google/InterviewProcess/UniqueEmailAddressProblem.java">Unique Email Address</a>
         - <a href="src/main/com/sumit/coding/google/InterviewProcess/LicenseKeyFormattingProblem.java">License Key Formatting</a>
         - <a href="src/main/com/sumit/coding/google/InterviewProcess/FruitIntoBasketProblem.java">Fruit Into Basket</a>
-    * Arrays and Strings [8 questions]
+    * Arrays and Strings [10 questions]
         - <a href="src/main/com/sumit/coding/google/arraysAndStrings/LengthOfLongestSubstringProblem.java">Length Of Longest Substring</a>
         - <a href="src/main/com/sumit/coding/google/arraysAndStrings/ContainerWithMostWaterProblem.java">Container With Most Water Problem</a>
         - <a href="src/main/com/sumit/coding/google/arraysAndStrings/ThreeSumProblem.java">Three Sum Problem</a>
@@ -15,6 +15,8 @@ Competitive Programming Codebase
         - <a href="src/main/com/sumit/coding/google/arraysAndStrings/RotateImageProblem.java">Rotate Image</a>
         - <a href="src/main/com/sumit/coding/google/arraysAndStrings/JumpGameProblem.java">Jump Game</a>
         - <a href="src/main/com/sumit/coding/google/arraysAndStrings/PlusOneProblem.java">Plus One</a>
+        - <a href="src/main/com/sumit/coding/google/arraysAndStrings/MinimumWindowSubstringProblem.java">Minimum Window Substring</a>
+        - <a href="src/main/com/sumit/coding/google/arraysAndStrings/LongestSubstringWithAtMostTwoDistinctCharactersProblem.java">Longest Substring With At Most Two Distinct Characters</a>
     * Linked List [4 questions]
         - <a href="src/main/com/sumit/coding/google/LinkedList/AddTwoNumbers.java">Add Two Numbers</a>
         - <a href="src/main/com/sumit/coding/google/LinkedList/MergeTwoListProblem.java">Merge Two LinkedList</a>
