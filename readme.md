@@ -6,7 +6,7 @@ Competitive Programming Codebase
         - <a href="src/main/com/sumit/coding/google/InterviewProcess/UniqueEmailAddressProblem.java">Unique Email Address</a>
         - <a href="src/main/com/sumit/coding/google/InterviewProcess/LicenseKeyFormattingProblem.java">License Key Formatting</a>
         - <a href="src/main/com/sumit/coding/google/InterviewProcess/FruitIntoBasketProblem.java">Fruit Into Basket</a>
-    * Arrays and Strings [13 questions]
+    * Arrays and Strings [14 questions]
         - <a href="src/main/com/sumit/coding/google/arraysAndStrings/LengthOfLongestSubstringProblem.java">Length Of Longest Substring</a>
         - <a href="src/main/com/sumit/coding/google/arraysAndStrings/ContainerWithMostWaterProblem.java">Container With Most Water Problem</a>
         - <a href="src/main/com/sumit/coding/google/arraysAndStrings/ThreeSumProblem.java">Three Sum Problem</a>
@@ -20,6 +20,7 @@ Competitive Programming Codebase
         - <a href="src/main/com/sumit/coding/google/arraysAndStrings/MissingRangesProblem.java">Missing Ranges</a>
         - <a href="src/main/com/sumit/coding/google/arraysAndStrings/NextClosestTimeProblem.java">Next Closest Time</a>
         - <a href="src/main/com/sumit/coding/google/arraysAndStrings/ExpressiveWordsProblem.java">Expressive Words</a>
+        - <a href="src/main/com/sumit/coding/google/arraysAndStrings/MaximizeDistanceToClosestPersonProblem.java">Maximize Distance to Closest Person</a>
     * Linked List [4 questions]
         - <a href="src/main/com/sumit/coding/google/LinkedList/AddTwoNumbers.java">Add Two Numbers</a>
         - <a href="src/main/com/sumit/coding/google/LinkedList/MergeTwoListProblem.java">Merge Two LinkedList</a>
