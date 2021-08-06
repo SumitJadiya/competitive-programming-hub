@@ -6,7 +6,7 @@ Competitive Programming Codebase
         - <a href="src/main/com/sumit/coding/google/InterviewProcess/UniqueEmailAddressProblem.java">Unique Email Address</a>
         - <a href="src/main/com/sumit/coding/google/InterviewProcess/LicenseKeyFormattingProblem.java">License Key Formatting</a>
         - <a href="src/main/com/sumit/coding/google/InterviewProcess/FruitIntoBasketProblem.java">Fruit Into Basket</a>
-    * Arrays and Strings [22 questions]
+    * Arrays and Strings [23 questions]
         - <a href="src/main/com/sumit/coding/google/arraysAndStrings/LengthOfLongestSubstringProblem.java">Length Of Longest Substring</a>
         - <a href="src/main/com/sumit/coding/google/arraysAndStrings/ContainerWithMostWaterProblem.java">Container With Most Water Problem</a>
         - <a href="src/main/com/sumit/coding/google/arraysAndStrings/ThreeSumProblem.java">Three Sum Problem</a>
@@ -28,6 +28,7 @@ Competitive Programming Codebase
         - <a href="src/main/com/sumit/coding/google/arraysAndStrings/KthLargestElementInArrayProblem.java">Kth Largest Element In Array</a>
         - <a href="src/main/com/sumit/coding/google/arraysAndStrings/MeetingRoomsIIProblem.java">Meeting Rooms II</a>
         - <a href="src/main/com/sumit/coding/google/arraysAndStrings/BackspaceStringCompareProblem.java">Backspace String Compare</a>
+        - <a href="src/main/com/sumit/coding/google/arraysAndStrings/MinimumCostToHireKWorkersProblem.java">Minimum Cost to Hire K Workers</a>
         - <a href="src/main/com/sumit/coding/google/arraysAndStrings/KClosestPointsToOriginProblem.java">K Closest Points To Origin</a>
     * Linked List [4 questions]
         - <a href="src/main/com/sumit/coding/google/LinkedList/AddTwoNumbers.java">Add Two Numbers</a>
