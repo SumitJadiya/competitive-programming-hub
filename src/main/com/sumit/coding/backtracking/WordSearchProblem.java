@@ -16,12 +16,11 @@ public class WordSearchProblem {
     private int COLS;
 
     public static void main(String[] args) {
-        char[][] sampleBoard =
-                {
-                        {'c', 'a', 'a'},
-                        {'a', 'a', 'a'},
-                        {'b', 'c', 'd'}
-                };
+        char[][] sampleBoard = {
+                {'c', 'a', 'a'},
+                {'a', 'a', 'a'},
+                {'b', 'c', 'd'}
+        };
         String word = "aab";
 
         System.out.println("Word Exist - " + new WordSearchProblem().exist(sampleBoard, word));
