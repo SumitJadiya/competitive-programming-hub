@@ -18,11 +18,11 @@ public class WordSearchProblem {
     public static void main(String[] args) {
         char[][] sampleBoard =
                 {
-                        {'A', 'B', 'C', 'E'},
-                        {'S', 'F', 'C', 'S'},
-                        {'A', 'D', 'E', 'E'}
+                        {'c', 'a', 'a'},
+                        {'a', 'a', 'a'},
+                        {'b', 'c', 'd'}
                 };
-        String word = "ABCCED";
+        String word = "aab";
 
         System.out.println("Word Exist - " + new WordSearchProblem().exist(sampleBoard, word));
     }
@@ -52,6 +52,8 @@ public class WordSearchProblem {
         int[] colOffsets = {1, 0, -1, 0};
         for (int d = 0; d < 4; d++)
             if (backtrack(row + rowOffsets[d], col + colOffsets[d], word, index + 1)) return true;
+
+        board[row][col] = word.charAt(index);
 
         return false;
     }
