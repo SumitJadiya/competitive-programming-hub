@@ -52,3 +52,5 @@ Competitive Programming Codebase
         - <a href="src/main/com/sumit/coding/google/treeAndGraph/LongestIncreasingPathInMatrixProblem.java">Longest Increasing Path In Matrix</a>
         - <a href="src/main/com/sumit/coding/google/treeAndGraph/DecodeStringProblem.java">Decode String</a>
         - <a href="src/main/com/sumit/coding/google/treeAndGraph/CrackingTheSafeProblem.java">Cracking The Safe</a>
+    * Others [1 Questions]
+        - <a href="src/main/com/sumit/coding/google/Others/MinDiffBwLargestAndSmallestInThreeMovesProblem.java">Minimum Difference Between Largest and Smallest Value in Three Moves</a>
