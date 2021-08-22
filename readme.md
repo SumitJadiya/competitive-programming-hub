@@ -42,10 +42,13 @@ Competitive Programming Codebase
         - <a href="src/main/com/sumit/coding/google/LinkedList/MergeTwoListProblem.java">Merge Two LinkedList</a>
         - <a href="src/main/com/sumit/coding/google/LinkedList/RemoveNthNodeFromEnd.java">Remove Nth node from End</a>
         - <a href="src/main/com/sumit/coding/google/LinkedList/CopyListWithRandomPointerProblem.java">Copy List With Random Pointer</a>
-    * Recursion [3 questions]
+    * Recursion [6 questions]
         - <a href="src/main/com/sumit/coding/google/recursion/WordSquaresProblem.java">Word Squares</a>
+        - <a href="src/main/com/sumit/coding/google/recursion/WordSearchIIProblem.java">Word Squares II</a>
         - <a href="src/main/com/sumit/coding/google/recursion/GenerateParenthesisProblem.java">Generate Parenthesis</a>
         - <a href="src/main/com/sumit/coding/google/recursion/LetterCombinationsofPhoneNumberProblem.java">Letter Combinations of a Phone Number</a>
+        - <a href="src/main/com/sumit/coding/google/recursion/AndroidUnlockPatternProblem.java">Android Unlock Pattern</a>
+        - <a href="src/main/com/sumit/coding/google/recursion/StrobogrammaticNumberProblem.java">Strobogrammatic Number I & II</a>
     * Tree and Graph [12 questions]
         - <a href="src/main/com/sumit/coding/google/treeAndGraph/WordLadderProblem.java">Word Ladder</a>
         - <a href="src/main/com/sumit/coding/google/treeAndGraph/BinaryTreeMaximumPathSumProblem.java">Binary Tree Maximum Path Sum</a>
