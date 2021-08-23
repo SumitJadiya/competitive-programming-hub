@@ -49,8 +49,10 @@ Competitive Programming Codebase
         - <a href="src/main/com/sumit/coding/google/recursion/LetterCombinationsofPhoneNumberProblem.java">Letter Combinations of a Phone Number</a>
         - <a href="src/main/com/sumit/coding/google/recursion/AndroidUnlockPatternProblem.java">Android Unlock Pattern</a>
         - <a href="src/main/com/sumit/coding/google/recursion/StrobogrammaticNumberProblem.java">Strobogrammatic Number I & II</a>
-    * Sorting and Searching [1 questions]
+    * Sorting and Searching [3 questions]
         - <a href="src/main/com/sumit/coding/google/SearchingSorting/MedianOfTwoSortedArraysProblem.java">Median Of Two Sorted Arrays</a>
+        - <a href="src/main/com/sumit/coding/google/SearchingSorting/FindFirstAndLastPositionOfElementInSortedArrayProblem.java">Find First and Last Position of Element in Sorted Array</a>
+        - <a href="src/main/com/sumit/coding/google/SearchingSorting/MergeIntervalsProblem.java">Merge Intervals</a>
     * Tree and Graph [12 questions]
         - <a href="src/main/com/sumit/coding/google/treeAndGraph/WordLadderProblem.java">Word Ladder</a>
         - <a href="src/main/com/sumit/coding/google/treeAndGraph/BinaryTreeMaximumPathSumProblem.java">Binary Tree Maximum Path Sum</a>
