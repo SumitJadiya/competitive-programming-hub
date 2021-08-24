@@ -53,6 +53,7 @@ Competitive Programming Codebase
         - <a href="src/main/com/sumit/coding/google/SearchingSorting/MedianOfTwoSortedArraysProblem.java">Median Of Two Sorted Arrays</a>
         - <a href="src/main/com/sumit/coding/google/SearchingSorting/FindFirstAndLastPositionOfElementInSortedArrayProblem.java">Find First and Last Position of Element in Sorted Array</a>
         - <a href="src/main/com/sumit/coding/google/SearchingSorting/MergeIntervalsProblem.java">Merge Intervals</a>
+        - <a href="src/main/com/sumit/coding/google/SearchingSorting/InsertIntervalProblem.java">Insert Intervals</a>
     * Tree and Graph [12 questions]
         - <a href="src/main/com/sumit/coding/google/treeAndGraph/WordLadderProblem.java">Word Ladder</a>
         - <a href="src/main/com/sumit/coding/google/treeAndGraph/BinaryTreeMaximumPathSumProblem.java">Binary Tree Maximum Path Sum</a>
