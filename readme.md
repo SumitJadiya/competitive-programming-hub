@@ -70,3 +70,6 @@ Competitive Programming Codebase
         - <a href="src/main/com/sumit/coding/google/treeAndGraph/CrackingTheSafeProblem.java">Cracking The Safe</a>
     * Others [1 Questions]
         - <a href="src/main/com/sumit/coding/google/Others/MinDiffBwLargestAndSmallestInThreeMovesProblem.java">Minimum Difference Between Largest and Smallest Value in Three Moves</a>
+* **Amazon**
+    * Arrays and Strings
+        - <a href="src/main/com/sumit/coding/amazon/arraysAndStrings/TwoSumProblem.java">Two Sum</a>
