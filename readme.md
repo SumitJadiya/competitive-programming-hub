@@ -71,6 +71,7 @@ Competitive Programming Codebase
     * Others [1 Questions]
         - <a href="src/main/com/sumit/coding/google/Others/MinDiffBwLargestAndSmallestInThreeMovesProblem.java">Minimum Difference Between Largest and Smallest Value in Three Moves</a>
 * **Amazon**
-    * Arrays and Strings
+    * Arrays and Strings [3 Questions]
         - <a href="src/main/com/sumit/coding/amazon/arraysAndStrings/TwoSumProblem.java">Two Sum</a>
         - <a href="src/main/com/sumit/coding/amazon/arraysAndStrings/LongestSubstringWithoutRepeatingCharactersProblem.java">Longest Substring Without Repeating Characters</a>
+        - <a href="src/main/com/sumit/coding/amazon/arraysAndStrings/StringToIntegerProblem.java">String to Integer</a>
