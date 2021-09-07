@@ -1,34 +1,27 @@
 package main.com.sumit.coding.linkedList;
 
-class Node {
-
-    int val;
-    protected Node next;
-
-    public Node(int val) {
-        this.val = val;
-    }
-}
-
+/*
+ * Problem URL : https://leetcode.com/problems/reverse-linked-list/
+ * */
 public class ReverseOfLinkedList {
 
     public static void main(String[] args) {
-        Node node = new Node(1);
-        node.next = new Node(2);
-        node.next.next = new Node(3);
-        node.next.next.next = new Node(4);
-        node.next.next.next.next = new Node(5);
+        ListNode node = new ListNode(1);
+        node.next = new ListNode(2);
+        node.next.next = new ListNode(3);
+        node.next.next.next = new ListNode(4);
+        node.next.next.next.next = new ListNode(5);
 
-        Node reversedLinkedList = reverseLinkedList(node);
+        ListNode reversedLinkedList = reverseLinkedList(node);
 
-        printLinkedList(reversedLinkedList);
+        ListNode.printLinkedList(reversedLinkedList);
     }
 
-    private static Node reverseLinkedList(Node head) {
+    private static ListNode reverseLinkedList(ListNode head) {
 
-        Node currPtr = null;
-        Node nextPtr = head;
-        Node prevPtr = null;
+        ListNode currPtr = null;
+        ListNode nextPtr = head;
+        ListNode prevPtr = null;
 
         while (nextPtr != null) {
             currPtr = nextPtr;
@@ -39,13 +32,5 @@ public class ReverseOfLinkedList {
         head = currPtr;
 
         return head;
-    }
-
-    private static void printLinkedList(Node head) {
-
-        while (head != null) {
-            System.out.print(head.val + " ");
-            head = head.next;
-        }
     }
 }
