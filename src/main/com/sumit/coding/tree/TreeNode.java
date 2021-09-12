@@ -1,24 +1,27 @@
 package main.com.sumit.coding.tree;
 
+import java.util.ArrayList;
+import java.util.LinkedList;
+import java.util.List;
+import java.util.Queue;
+
 public class TreeNode {
 
     int key;
     protected TreeNode left;
     protected TreeNode right;
-    protected TreeNode node;
 
     TreeNode(int x) {
         key = x;
     }
 
     private static <T> StringBuilder toString(StringBuilder string, TreeNode node) {
-        string.append('{');
         if (node != null) {
             string.append(node.getKey());
-            toString(string.append(", "), node.getLeft());
-            toString(string.append(", "), node.getRight());
+            if (node.getLeft() != null) toString(string.append(", "), node.getLeft());
+            if (node.getRight() != null) toString(string.append(", "), node.getRight());
         }
-        return string.append('}');
+        return string;
     }
 
     public int getKey() {
@@ -45,8 +48,35 @@ public class TreeNode {
         this.right = right;
     }
 
+    public static List<List<Integer>> print_using_bfs(TreeNode root) {
+        if (root == null)
+            return new ArrayList<>();
+
+        List<List<Integer>> results = new ArrayList<>();
+        Queue<TreeNode> queue = new LinkedList<>();
+        queue.add(root);
+
+        while (!queue.isEmpty()) {
+            int size = queue.size();
+            List<Integer> l = new ArrayList<>();
+
+            while (size-- > 0) {
+                TreeNode temp = queue.remove();
+                l.add(temp.key);
+                if (temp.left != null)
+                    queue.add(temp.left);
+                if (temp.right != null)
+                    queue.add(temp.right);
+            }
+
+            results.add(l);
+        }
+
+        return results;
+    }
+
     @Override
     public String toString() {
-        return toString(new StringBuilder(), this.node).toString();
+        return toString(new StringBuilder(), this).toString();
     }
 }
