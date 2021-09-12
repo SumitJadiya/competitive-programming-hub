@@ -2,6 +2,9 @@ package main.com.sumit.coding.tree;
 
 import static main.com.sumit.coding.tree.TreeNode.print_using_bfs;
 
+/*
+ * Problem URL : https://leetcode.com/problems/invert-binary-tree/
+ * */
 public class InvertTreeProblem {
 
     public static void main(String[] args) {
@@ -16,6 +19,10 @@ public class InvertTreeProblem {
         System.out.println(print_using_bfs(new InvertTreeProblem().invertTree(root)));
     }
 
+    /*
+     * Time Complexity : O(N)
+     * Space Complexity : O(N)
+     * */
     public TreeNode invertTree(TreeNode root) {
         if (root == null) return root;
 
