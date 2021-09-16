@@ -21,9 +21,9 @@ Competitive Programming Codebase
         - <a href="src/main/com/sumit/coding/tree/MaximumProductOfSplittedBinaryTreeProblem.java">Maximum Product Of Splitted Binary Tree</a>
         - <a href="src/main/com/sumit/coding/tree/MergeTwoBinaryTreeProblem.java">Merge Two Binary Tree</a>
         - <a href="src/main/com/sumit/coding/tree/RangeSumOfBST.java">Range Sum Of BST</a>
-        - <a href="src/main/com/sumit/coding/tree/ValidateBSTProblem.java">Validate BST</a>
         - <a href="src/main/com/sumit/coding/tree/TwoSumIVProblem.java">Two Sum IV - Input is BST</a>
         - <a href="src/main/com/sumit/coding/tree/LowestCommonAncestorOfBSTProblem.java">Lowest Common Ancestor Of BST</a>
+        - <a href="src/main/com/sumit/coding/tree/ValidateBinarySearchTreeProblem.java">Validate Binary Search Tree</a>
 * **Google** 
     * Interview Process [3 questions]
         - <a href="src/main/com/sumit/coding/google/InterviewProcess/UniqueEmailAddressProblem.java">Unique Email Address</a>
