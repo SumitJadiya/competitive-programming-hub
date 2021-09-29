@@ -17,7 +17,15 @@ import java.util.Map;
 public class StrobogrammaticNumberProblem {
 
     List<String> list;
-    Map<Character, Character> hm = new HashMap<>(Map.of('0', '0', '1', '1', '6', '9', '8', '8', '9', '6'));
+    Map<Character, Character> hm = new HashMap<Character, Character>() {
+        {
+            put('0', '0');
+            put('1', '1');
+            put('6', '9');
+            put('8', '8');
+            put('9', '6');
+        }
+    };
 
     public static void main(String[] args) {
         /* First Problem */

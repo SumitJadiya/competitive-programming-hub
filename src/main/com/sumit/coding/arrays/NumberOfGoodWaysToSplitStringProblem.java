@@ -20,7 +20,7 @@ public class NumberOfGoodWaysToSplitStringProblem {
         int d_l = 0;
         int d_r = 0;
         int res = 0;
-        var s = str.toCharArray();
+        char[] s = str.toCharArray();
 
         for (char ch : s)
             d_r += ++r[ch - 'a'] == 1 ? 1 : 0;

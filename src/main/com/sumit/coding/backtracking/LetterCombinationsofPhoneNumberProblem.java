@@ -1,6 +1,7 @@
 package main.com.sumit.coding.backtracking;
 
 import java.util.ArrayList;
+import java.util.HashMap;
 import java.util.List;
 import java.util.Map;
 
@@ -9,9 +10,18 @@ import java.util.Map;
  * */
 public class LetterCombinationsofPhoneNumberProblem {
     private List<String> combinations = new ArrayList<>();
-    private Map<Character, String> letters = Map.of(
-            '2', "abc", '3', "def", '4', "ghi", '5', "jkl",
-            '6', "mno", '7', "pqrs", '8', "tuv", '9', "wxyz");
+    private Map<Character, String> letters = new HashMap<Character, String>() {
+        {
+            put('2', "abc");
+            put('3', "def");
+            put('4', "ghi");
+            put('5', "jkl");
+            put('6', "mno");
+            put('7', "pqrs");
+            put('8', "tuv");
+            put('9', "wxyz");
+        }
+    };
     private String phoneDigits;
 
     public static void main(String[] args) {

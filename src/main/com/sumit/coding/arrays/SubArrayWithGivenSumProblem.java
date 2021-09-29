@@ -1,7 +1,7 @@
 package main.com.sumit.coding.arrays;
 
 import java.util.ArrayList;
-import java.util.List;
+import java.util.Arrays;
 
 /*
  *  Subarray with given sum
@@ -44,7 +44,7 @@ public class SubArrayWithGivenSumProblem {
                 startIndex++;
             }
             if (currSum == sum)
-                return new ArrayList<>(List.of(startIndex + 1, index));
+                return new ArrayList<>(Arrays.asList(startIndex + 1, index));
 
             if (index < n)
                 currSum += arr[index];

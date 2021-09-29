@@ -1,6 +1,7 @@
 package main.com.sumit.coding.google.treeAndGraph;
 
 import java.util.ArrayList;
+import java.util.Arrays;
 import java.util.HashMap;
 import java.util.LinkedList;
 import java.util.List;
@@ -25,7 +26,7 @@ public class WordLadderProblem {
     public static void main(String[] args) {
         String beginWord = "hit";
         String endWord = "cog";
-        List<String> wordList = List.of("hot", "dot", "dog", "lot", "log", "cog");
+        List<String> wordList = Arrays.asList("hot", "dot", "dog", "lot", "log", "cog");
         System.out.println(new WordLadderProblem().ladderLength(beginWord, endWord, wordList));
     }
 

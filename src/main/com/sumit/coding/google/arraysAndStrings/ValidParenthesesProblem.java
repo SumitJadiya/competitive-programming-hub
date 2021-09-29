@@ -21,8 +21,8 @@ public class ValidParenthesesProblem {
      * */
     public static boolean isValid(String s) {
 
-        var stack = new Stack<Character>();
-        var hashMap = new HashMap<Character, Character>();
+        Stack<Character> stack = new Stack<>();
+        HashMap<Character, Character> hashMap = new HashMap<>();
         hashMap.put(')', '(');
         hashMap.put(']', '[');
         hashMap.put('}', '{');

@@ -1,6 +1,7 @@
 package main.com.sumit.coding.hashing;
 
 import java.util.ArrayList;
+import java.util.Arrays;
 import java.util.HashMap;
 import java.util.List;
 
@@ -17,7 +18,7 @@ public class EmployeeImportanceProblem {
         Employee emp = new Employee();
         emp.id = 1;
         emp.importance = 5;
-        emp.subordinates = new ArrayList<>(List.of(2, 3));
+        emp.subordinates = new ArrayList<>(Arrays.asList(2, 3));
         list.add(emp);
 
         Employee emp2 = new Employee();
