@@ -2,6 +2,7 @@ package main.com.sumit.coding.amazon.arraysAndStrings;
 
 import java.util.Arrays;
 import java.util.HashMap;
+import java.util.Map;
 
 /*
  * Problem URL : https://leetcode.com/problems/two-sum/
@@ -19,7 +20,8 @@ public class TwoSumProblem {
      * Space Complexity : O(N)
      * */
     public static int[] twoSum(int[] nums, int target) {
-        var cache = new HashMap<Integer, Integer>();
+        // var cache = new HashMap<Integer, Integer>();
+        Map<Integer, Integer> cache = new HashMap<>();
 
         for (int i = 0; i < nums.length; i++) {
             int currentSum = target - nums[i];
