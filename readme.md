@@ -9,6 +9,8 @@ Competitive Programming Codebase
         - <a href="src/main/com/sumit/coding/arrays/BinarySearch.java">Binary Search</a>
         - <a href="src/main/com/sumit/coding/arrays/AnagramProblem.java">Anagram</a>
         - <a href="src/main/com/sumit/coding/strings/LongestPalindromeSubstringProblem.java">Longest Palindrome Substring</a>
+    *  Searching
+        - <a href="src/main/com/sumit/coding/arrays/BinarySearch.java">Binary Search</a>
     *  LinkedList
         - <a href="src/main/com/sumit/coding/linkedList/RemoveDuplicatesFromSortedListProblem.java">Remove Duplicates From Sorted List</a>
         - <a href="src/main/com/sumit/coding/linkedList/RemoveLinkedListElements.java">Remove Linked List Elements</a>
@@ -27,7 +29,7 @@ Competitive Programming Codebase
         - <a href="src/main/com/sumit/coding/tree/ValidateBinarySearchTreeProblem.java">Validate Binary Search Tree</a>
         - <a href="src/main/com/sumit/coding/tree/BinaryTreeLevelOrderTraversalProblem.java">Binary Tree Level Order Traversal</a>
         - <a href="src/main/com/sumit/coding/tree/ConvertSortedArrayToBSTProblem.java">Convert Sorted Array To BST</a>
-        
+              
 * **Google** 
     * Interview Process [3 questions]
         - <a href="src/main/com/sumit/coding/google/InterviewProcess/UniqueEmailAddressProblem.java">Unique Email Address</a>
