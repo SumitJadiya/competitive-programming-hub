@@ -14,6 +14,9 @@ public class CandiesProblem {
         System.out.println(candies(list.size(), list));
     }
 
+    /*
+    * Returns number of candies
+    * */
     public static long candies(int n, List<Integer> arr) {
         long[] candies = new long[n];
 
