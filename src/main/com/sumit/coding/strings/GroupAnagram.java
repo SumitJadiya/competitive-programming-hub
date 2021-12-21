@@ -1,18 +1,24 @@
 package main.com.sumit.coding.strings;
 
 import java.util.ArrayList;
-import java.util.Arrays;
 import java.util.HashMap;
 import java.util.List;
+import java.util.stream.Collectors;
+import java.util.stream.Stream;
 
 /**
  * Problem URL:
  * https://leetcode.com/explore/challenge/card/30-day-leetcoding-challenge/528/week-1/3288/
+ * <p>
+ * String[] input = {"sap", "sun", "abs", "bas", "asp", "aps"};
+ * [sun]
+ * [abs, bas]
+ * [sap, asp, aps]
  */
 public class GroupAnagram {
 
     public static void main(String[] args) {
-        String[] input = {"eat", "tea", "tan", "ate", "nat", "bat"};
+        String[] input = {"sap", "sun", "abs", "bas", "asp", "aps"};
         List<List<String>> list = new GroupAnagram().groupAnagrams(input);
 
         for (List<String> str : list) {
@@ -20,28 +26,23 @@ public class GroupAnagram {
         }
     }
 
+    /*
+     * Time Complexity : O(N * K * logN)
+     * Space Complexity : O(N * K)
+     *
+     * N -> Length of array input
+     * K -> max length of element inside input array
+     * */
     public List<List<String>> groupAnagrams(String[] strs) {
         HashMap<String, List<String>> map = new HashMap<>();
-        List<List<String>> list = new ArrayList<>();
 
-        for (int i = 0; i < strs.length; i++) {
-            String word = strs[i];
-            char[] letters = word.toCharArray();
-            Arrays.sort(letters);
-            String newWord = new String(letters);
+        for (String str : strs) {
+            String newWord = Stream.of(str.split("")).sorted().collect(Collectors.joining());
 
-            if (map.containsKey(newWord)) {
-                map.get(newWord).add(word);
-            } else {
-                List<String> words = new ArrayList<>();
-                words.add(word);
-                map.put(newWord, words);
-            }
+            map.putIfAbsent(newWord, new ArrayList<>());
+            map.get(newWord).add(str);
         }
 
-        for (String s : map.keySet()) {
-            list.add(map.get(s));
-        }
-        return list;
+        return new ArrayList<>(map.values());
     }
 }
