@@ -38,8 +38,4 @@ public class FindRepeatAndMissingNumber {
 
         return res;
     }
-
-
 }
-
-
