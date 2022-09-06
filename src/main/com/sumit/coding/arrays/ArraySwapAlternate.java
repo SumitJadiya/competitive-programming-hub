@@ -1,4 +1,4 @@
-package main.com.sumit.coding.math;
+package main.com.sumit.coding.arrays;
 
 import java.util.Arrays;
 
