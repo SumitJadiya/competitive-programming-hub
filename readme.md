@@ -9,6 +9,10 @@ Competitive Programming Codebase
         - <a href="src/main/com/sumit/coding/arrays/BinarySearch.java">Binary Search</a>
         - <a href="src/main/com/sumit/coding/arrays/AnagramProblem.java">Anagram</a>
         - <a href="src/main/com/sumit/coding/strings/LongestPalindromeSubstringProblem.java">Longest Palindrome Substring</a>
+        - <a href="src/main/com/sumit/coding/strings/SortZeroOne.java">Sort 0 1</a>
+        - <a href="src/main/com/sumit/coding/strings/FindAllDuplicatesInArray.java">Find All Duplicates in an Array</a>
+        - <a href="src/main/com/sumit/coding/strings/ArraySwapAlternate.java">Swap alternate elements in array</a>
+        
     *  Searching
         - <a href="src/main/com/sumit/coding/arrays/BinarySearch.java">Binary Search</a>
     *  LinkedList
