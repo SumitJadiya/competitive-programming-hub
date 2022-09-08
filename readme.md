@@ -8,10 +8,11 @@ Competitive Programming Codebase
         - <a href="src/main/com/sumit/coding/arrays/ArrayOperations.java">Array Operations</a>
         - <a href="src/main/com/sumit/coding/arrays/BinarySearch.java">Binary Search</a>
         - <a href="src/main/com/sumit/coding/arrays/AnagramProblem.java">Anagram</a>
-        - <a href="src/main/com/sumit/coding/strings/LongestPalindromeSubstringProblem.java">Longest Palindrome Substring</a>
-        - <a href="src/main/com/sumit/coding/strings/SortZeroOne.java">Sort 0 1</a>
-        - <a href="src/main/com/sumit/coding/strings/FindAllDuplicatesInArray.java">Find All Duplicates in an Array</a>
-        - <a href="src/main/com/sumit/coding/strings/ArraySwapAlternate.java">Swap alternate elements in array</a>
+        - <a href="src/main/com/sumit/coding/arrays/LongestPalindromeSubstringProblem.java">Longest Palindrome Substring</a>
+        - <a href="src/main/com/sumit/coding/arrays/SortZeroOne.java">Sort 0 1</a>
+        - <a href="src/main/com/sumit/coding/arrays/FindAllDuplicatesInArray.java">Find All Duplicates in an Array</a>
+        - <a href="src/main/com/sumit/coding/arrays/ArraySwapAlternate.java">Swap alternate elements in array</a>
+        - <a href="src/main/com/sumit/coding/arrays/SortZeroOneTwo.java">Sort 0 1 2</a>
         
     *  Searching
         - <a href="src/main/com/sumit/coding/arrays/BinarySearch.java">Binary Search</a>
