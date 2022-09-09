@@ -13,6 +13,7 @@ Competitive Programming Codebase
         - <a href="src/main/com/sumit/coding/arrays/FindAllDuplicatesInArray.java">Find All Duplicates in an Array</a>
         - <a href="src/main/com/sumit/coding/arrays/ArraySwapAlternate.java">Swap alternate elements in array</a>
         - <a href="src/main/com/sumit/coding/arrays/SortZeroOneTwo.java">Sort 0 1 2</a>
+        - <a href="src/main/com/sumit/coding/arrays/FirstAndLastPositionOfElementInSortedArrayProblem.java">First and Last Position of an Element In Sorted Array</a>
         
     *  Searching
         - <a href="src/main/com/sumit/coding/arrays/BinarySearch.java">Binary Search</a>
