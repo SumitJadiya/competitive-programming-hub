@@ -2,7 +2,7 @@ Competitive Programming Codebase
 ----------------------------------
 
 * **Topics**
-    *  Arrays and String
+    *  <b>Arrays and String</b>
         - <a href="src/main/com/sumit/coding/arrays/AddOneToNumber.java">Add One To Number</a>
         - <a href="src/main/com/sumit/coding/arrays/AdvancedFlipProblem.java">Advanced Flip</a>
         - <a href="src/main/com/sumit/coding/arrays/ArrayOperations.java">Array Operations</a>
@@ -13,15 +13,16 @@ Competitive Programming Codebase
         - <a href="src/main/com/sumit/coding/arrays/FindAllDuplicatesInArray.java">Find All Duplicates in an Array</a>
         - <a href="src/main/com/sumit/coding/arrays/ArraySwapAlternate.java">Swap alternate elements in array</a>
         - <a href="src/main/com/sumit/coding/arrays/SortZeroOneTwo.java">Sort 0 1 2</a>
-        - <a href="src/main/com/sumit/coding/arrays/FirstAndLastPositionOfElementInSortedArrayProblem.java">First and Last Position of an Element In Sorted Array</a>
         
-    *  Searching
+    *  <b>Searching</b>
         - <a href="src/main/com/sumit/coding/arrays/BinarySearch.java">Binary Search</a>
-    *  LinkedList
+        - <a href="src/main/com/sumit/coding/arrays/PeakIndexInMountainArray.java">Peak Index in a Mountain Array</a>
+        - <a href="src/main/com/sumit/coding/arrays/FirstAndLastPositionOfElementInSortedArrayProblem.java">First and Last Position of an Element In Sorted Array</a>
+    *  <b>LinkedList</b>
         - <a href="src/main/com/sumit/coding/linkedList/RemoveDuplicatesFromSortedListProblem.java">Remove Duplicates From Sorted List</a>
         - <a href="src/main/com/sumit/coding/linkedList/RemoveLinkedListElements.java">Remove Linked List Elements</a>
         - <a href="src/main/com/sumit/coding/linkedList/ReverseOfLinkedList.java">Reverse Of Linked List</a>
-    *  Tree
+    *  <b>Tree</b>
         - <a href="src/main/com/sumit/coding/tree/InsertIntoBSTProblem.java">Insert into BST</a>
         - <a href="src/main/com/sumit/coding/tree/InvertTreeProblem.java">Invert Tree</a>
         - <a href="src/main/com/sumit/coding/tree/DiameterOfBinaryTree.java">Diameter of Binary Tree</a>
