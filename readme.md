@@ -23,6 +23,7 @@ Competitive Programming Codebase
         - <a href="src/main/com/sumit/coding/arrays/FirstAndLastPositionOfElementInSortedArrayProblem.java">First and
           Last Position of an Element In Sorted Array</a>
         - <a href="src/main/com/sumit/coding/arrays/SearchInRotatedSortedArray.java">Search in Rotated Sorted Array</a>
+        - <a href="src/main/com/sumit/coding/arrays/SquareRootProblem.java">Sqrt(x)</a>
     * <b>LinkedList</b>
         - <a href="src/main/com/sumit/coding/linkedList/RemoveDuplicatesFromSortedListProblem.java">Remove Duplicates
           From Sorted List</a>
