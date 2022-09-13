@@ -14,10 +14,7 @@ Competitive Programming Codebase
         - <a href="src/main/com/sumit/coding/arrays/FindAllDuplicatesInArray.java">Find All Duplicates in an Array</a>
         - <a href="src/main/com/sumit/coding/arrays/ArraySwapAlternate.java">Swap alternate elements in array</a>
         - <a href="src/main/com/sumit/coding/arrays/SortZeroOneTwo.java">Sort 0 1 2</a>
-        - <a href="src/main/com/sumit/coding/arrays/FindPivotIndex.java">Find Pivot Index / Find the Middle Index in
-          Array </a>
-    * <b>Math</b>
-        - <a href="src/main/com/sumit/coding/math/FloatPartInSquareRoot.java">Float Part In Square Root</a>
+
     * <b>Searching</b>
         - <a href="src/main/com/sumit/coding/arrays/BinarySearch.java">Binary Search</a>
         - <a href="src/main/com/sumit/coding/arrays/PeakIndexInMountainArray.java">Peak Index in a Mountain Array</a>
@@ -25,6 +22,10 @@ Competitive Programming Codebase
           Last Position of an Element In Sorted Array</a>
         - <a href="src/main/com/sumit/coding/arrays/SearchInRotatedSortedArray.java">Search in Rotated Sorted Array</a>
         - <a href="src/main/com/sumit/coding/arrays/SquareRootProblem.java">Sqrt(x)</a>
+        - <a href="src/main/com/sumit/coding/arrays/FindPivotIndex.java">Find Pivot Index / Find the Middle Index in
+          Array </a>
+        - <a href="src/main/com/sumit/coding/math/FloatPartInSquareRoot.java">Float Part In Square Root</a>
+        - <a href="src/main/com/sumit/coding/math/AllocateBooksProblem.java">Allocate Books</a>
     * <b>LinkedList</b>
         - <a href="src/main/com/sumit/coding/linkedList/RemoveDuplicatesFromSortedListProblem.java">Remove Duplicates
           From Sorted List</a>
