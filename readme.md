@@ -26,6 +26,7 @@ Competitive Programming Codebase
           Array </a>
         - <a href="src/main/com/sumit/coding/math/FloatPartInSquareRoot.java">Float Part In Square Root</a>
         - <a href="src/main/com/sumit/coding/math/AllocateBooksProblem.java">Allocate Books</a>
+        - <a href="src/main/com/sumit/coding/math/PaintersProblem.java">Painter's Partition Problem</a>
     * <b>LinkedList</b>
         - <a href="src/main/com/sumit/coding/linkedList/RemoveDuplicatesFromSortedListProblem.java">Remove Duplicates
           From Sorted List</a>
