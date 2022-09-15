@@ -25,8 +25,9 @@ Competitive Programming Codebase
         - <a href="src/main/com/sumit/coding/arrays/FindPivotIndex.java">Find Pivot Index / Find the Middle Index in
           Array </a>
         - <a href="src/main/com/sumit/coding/math/FloatPartInSquareRoot.java">Float Part In Square Root</a>
-        - <a href="src/main/com/sumit/coding/math/AllocateBooksProblem.java">Allocate Books</a>
-        - <a href="src/main/com/sumit/coding/math/PaintersProblem.java">Painter's Partition Problem</a>
+        - <a href="src/main/com/sumit/coding/arrays/AllocateBooksProblem.java">Allocate Books</a>
+        - <a href="src/main/com/sumit/coding/arrays/PaintersProblem.java">Painter's Partition Problem</a>
+        - <a href="src/main/com/sumit/coding/arrays/AggressiveCowsProblem.java">Aggressive Cows Problem</a>
     * <b>LinkedList</b>
         - <a href="src/main/com/sumit/coding/linkedList/RemoveDuplicatesFromSortedListProblem.java">Remove Duplicates
           From Sorted List</a>
