@@ -10,8 +10,8 @@ public interface SortAlgorithm {
      * @param arr Input Array
      */
     default void printArray(int[] arr) {
-        for (int i : arr)
-            System.out.print(arr[i] + " ");
+        for (int val : arr)
+            System.out.print(val + " ");
     }
 
     /**
@@ -26,5 +26,4 @@ public interface SortAlgorithm {
         arr[i] = arr[minIndex];
         arr[minIndex] = temp;
     }
-
 }

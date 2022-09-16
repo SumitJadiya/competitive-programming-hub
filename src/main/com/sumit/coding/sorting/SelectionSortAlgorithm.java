@@ -1,12 +1,12 @@
 package main.com.sumit.coding.sorting;
 
 /**
- * Problem URL:
- * https://www.interviewbit.com/tutorial/selection-sort/
+ * Selection Sort
+ * Problem URL: https://www.interviewbit.com/tutorial/selection-sort/
  */
 public class SelectionSortAlgorithm implements SortAlgorithm {
     public static void main(String[] args) {
-        int[] arr = {5, 2, 6, 7, 2, 1, 0, 3};
+        int[] arr = {0, 5, 2, 6, 7, 2, 1, 0, 3};
 
         SelectionSortAlgorithm selectionSortAlgorithm = new SelectionSortAlgorithm();
         selectionSortAlgorithm.sort(arr);
@@ -35,7 +35,6 @@ public class SelectionSortAlgorithm implements SortAlgorithm {
      *
      * @param arr   Input Array
      * @param start Starting Index
-     * @return
      */
     private int findMinIndex(int[] arr, int start) {
         int min = start;
