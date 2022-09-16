@@ -8,8 +8,8 @@ import java.util.List;
  * Aggressive Cows
  * Problem URL : https://www.codingninjas.com/codestudio/problems/aggressive-cows_1082559
  *
- * 6 4
- * 0 3 4 7 10 9
+ * i/p - 6 4
+ * o/p - 0 3 4 7 10 9
  * */
 public class AggressiveCowsProblem {
 
