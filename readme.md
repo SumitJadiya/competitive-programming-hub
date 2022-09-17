@@ -31,6 +31,7 @@ Competitive Programming Codebase
         - <a href="src/main/com/sumit/coding/searching/AggressiveCowsProblem.java">Aggressive Cows Problem</a>
         - <a href="src/main/com/sumit/coding/searching/SearchInsertPositionProblem.java">Search Insert Position</a>
         - <a href="src/main/com/sumit/coding/searching/FixedPointProblem.java">Fixed Point</a>
+        - <a href="src/main/com/sumit/coding/searching/FindTheDuplicateNumber.java">Find the Duplicate Number</a>
     * <b>LinkedList</b>
         - <a href="src/main/com/sumit/coding/linkedList/RemoveDuplicatesFromSortedListProblem.java">Remove Duplicates
           From Sorted List</a>
