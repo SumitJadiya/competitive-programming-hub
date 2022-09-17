@@ -1,4 +1,4 @@
-package main.com.sumit.coding.math;
+package main.com.sumit.coding.searching;
 
 public class FloatPartInSquareRoot {
 

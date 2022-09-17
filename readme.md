@@ -16,18 +16,20 @@ Competitive Programming Codebase
         - <a href="src/main/com/sumit/coding/arrays/SortZeroOneTwo.java">Sort 0 1 2</a>
 
     * <b>Searching</b>
-        - <a href="src/main/com/sumit/coding/arrays/BinarySearch.java">Binary Search</a>
-        - <a href="src/main/com/sumit/coding/arrays/PeakIndexInMountainArray.java">Peak Index in a Mountain Array</a>
-        - <a href="src/main/com/sumit/coding/arrays/FirstAndLastPositionOfElementInSortedArrayProblem.java">First and
+        - <a href="src/main/com/sumit/coding/searching/BinarySearch.java">Binary Search</a>
+        - <a href="src/main/com/sumit/coding/searching/PeakIndexInMountainArray.java">Peak Index in a Mountain Array</a>
+        - <a href="src/main/com/sumit/coding/searching/FirstAndLastPositionOfElementInSortedArrayProblem.java">First and
           Last Position of an Element In Sorted Array</a>
-        - <a href="src/main/com/sumit/coding/arrays/SearchInRotatedSortedArray.java">Search in Rotated Sorted Array</a>
-        - <a href="src/main/com/sumit/coding/arrays/SquareRootProblem.java">Sqrt(x)</a>
-        - <a href="src/main/com/sumit/coding/arrays/FindPivotIndex.java">Find Pivot Index / Find the Middle Index in
+        - <a href="src/main/com/sumit/coding/searching/SearchInRotatedSortedArray.java">Search in Rotated Sorted
+          Array</a>
+        - <a href="src/main/com/sumit/coding/searching/SquareRootProblem.java">Sqrt(x)</a>
+        - <a href="src/main/com/sumit/coding/searching/FindPivotIndex.java">Find Pivot Index / Find the Middle Index in
           Array </a>
-        - <a href="src/main/com/sumit/coding/math/FloatPartInSquareRoot.java">Float Part In Square Root</a>
-        - <a href="src/main/com/sumit/coding/arrays/AllocateBooksProblem.java">Allocate Books</a>
-        - <a href="src/main/com/sumit/coding/arrays/PaintersProblem.java">Painter's Partition Problem</a>
-        - <a href="src/main/com/sumit/coding/arrays/AggressiveCowsProblem.java">Aggressive Cows Problem</a>
+        - <a href="src/main/com/sumit/coding/searching/FloatPartInSquareRoot.java">Float Part In Square Root</a>
+        - <a href="src/main/com/sumit/coding/searching/AllocateBooksProblem.java">Allocate Books</a>
+        - <a href="src/main/com/sumit/coding/searching/PaintersProblem.java">Painter's Partition Problem</a>
+        - <a href="src/main/com/sumit/coding/searching/AggressiveCowsProblem.java">Aggressive Cows Problem</a>
+        - <a href="src/main/com/sumit/coding/searching/SearchInsertPositionProblem.java">Search Insert Position</a>
     * <b>LinkedList</b>
         - <a href="src/main/com/sumit/coding/linkedList/RemoveDuplicatesFromSortedListProblem.java">Remove Duplicates
           From Sorted List</a>

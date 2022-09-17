@@ -1,4 +1,4 @@
-package main.com.sumit.coding.arrays;
+package main.com.sumit.coding.searching;
 
 /*
  * Sqrt(x)

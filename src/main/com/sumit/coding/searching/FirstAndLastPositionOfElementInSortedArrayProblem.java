@@ -1,4 +1,4 @@
-package main.com.sumit.coding.arrays;
+package main.com.sumit.coding.searching;
 
 import java.util.ArrayList;
 import java.util.Arrays;
