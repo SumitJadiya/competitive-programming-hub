@@ -32,7 +32,6 @@ public class BubbleSortAlgorithm implements SortAlgorithm {
                     bubbleSortAlgorithm.swap(arr, j, j + 1);
                     swapped = true;
                 }
-
             }
             if (!swapped)
                 break;

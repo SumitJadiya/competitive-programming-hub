@@ -2,7 +2,7 @@ package main.com.sumit.coding.sorting;
 
 /**
  * Selection Sort
- * Problem URL: https://www.interviewbit.com/tutorial/selection-sort/
+ * Problem URL: https://www.interviewbit.com/tutorial/selection-sort
  */
 public class SelectionSortAlgorithm implements SortAlgorithm {
     public static void main(String[] args) {
@@ -14,9 +14,9 @@ public class SelectionSortAlgorithm implements SortAlgorithm {
     }
 
     /**
-     * Method to perform sorting
-     *
-     * @param arr Input Array
+     * Time Complexity : O(n2)
+     * Space Complexity : O(1)
+     * usecase - small size array
      */
     private void sort(int[] arr) {
         int minIndex;

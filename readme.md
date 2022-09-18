@@ -14,7 +14,6 @@ Competitive Programming Codebase
         - <a href="src/main/com/sumit/coding/arrays/FindAllDuplicatesInArray.java">Find All Duplicates in an Array</a>
         - <a href="src/main/com/sumit/coding/arrays/ArraySwapAlternate.java">Swap alternate elements in array</a>
         - <a href="src/main/com/sumit/coding/arrays/SortZeroOneTwo.java">Sort 0 1 2</a>
-
     * <b>Searching</b>
         - <a href="src/main/com/sumit/coding/searching/BinarySearch.java">Binary Search</a>
         - <a href="src/main/com/sumit/coding/searching/PeakIndexInMountainArray.java">Peak Index in a Mountain Array</a>
@@ -32,6 +31,11 @@ Competitive Programming Codebase
         - <a href="src/main/com/sumit/coding/searching/SearchInsertPositionProblem.java">Search Insert Position</a>
         - <a href="src/main/com/sumit/coding/searching/FixedPointProblem.java">Fixed Point</a>
         - <a href="src/main/com/sumit/coding/searching/FindTheDuplicateNumber.java">Find the Duplicate Number</a>
+    * <b>Sorting</b>
+        - <a href="src/main/com/sumit/coding/sorting/BubbleSortAlgorithm.java">Bubble Sort</a>
+        - <a href="src/main/com/sumit/coding/sorting/SelectionSortAlgorithm.java">Selection Sort</a>
+        - <a href="src/main/com/sumit/coding/sorting/InsertionSortAlgorithm.java">Insertion Sort</a>
+        - <a href="src/main/com/sumit/coding/sorting/MergeSortAlgorithm.java">Merge Sort</a>
     * <b>LinkedList</b>
         - <a href="src/main/com/sumit/coding/linkedList/RemoveDuplicatesFromSortedListProblem.java">Remove Duplicates
           From Sorted List</a>
