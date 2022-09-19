@@ -36,6 +36,7 @@ Competitive Programming Codebase
         - <a href="src/main/com/sumit/coding/sorting/SelectionSortAlgorithm.java">Selection Sort</a>
         - <a href="src/main/com/sumit/coding/sorting/InsertionSortAlgorithm.java">Insertion Sort</a>
         - <a href="src/main/com/sumit/coding/sorting/MergeSortAlgorithm.java">Merge Sort</a>
+        - <a href="src/main/com/sumit/coding/sorting/QuickSortAlgorithm.java">Quick Sort</a>
     * <b>LinkedList</b>
         - <a href="src/main/com/sumit/coding/linkedList/RemoveDuplicatesFromSortedListProblem.java">Remove Duplicates
           From Sorted List</a>
