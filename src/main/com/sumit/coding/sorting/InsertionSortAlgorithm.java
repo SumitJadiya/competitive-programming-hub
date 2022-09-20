@@ -1,7 +1,7 @@
 package main.com.sumit.coding.sorting;
 
 
-/* *
+/**
  * Problem URL:
  * https://www.interviewbit.com/tutorial/insertion-sort-algorithm/
  */
@@ -14,9 +14,7 @@ public class InsertionSortAlgorithm implements SortAlgorithm {
     }
 
     /**
-     * Main logic of Insertion Sort
-     *
-     * @param arr Input Array
+     * Time Complexity : O(n2)
      */
     private void sort(int[] arr) {
         int i = 1, j, key;
@@ -26,7 +24,7 @@ public class InsertionSortAlgorithm implements SortAlgorithm {
             key = arr[i];
             j = i - 1;
             while (j >= 0 && arr[j] > key) {
-                arr[j + 1] = arr[j];
+                arr[j + 1] = arr[j]; // shifting elements to right
                 j--;
             }
             arr[j + 1] = key;
