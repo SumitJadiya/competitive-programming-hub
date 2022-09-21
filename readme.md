@@ -37,6 +37,7 @@ Competitive Programming Codebase
         - <a href="src/main/com/sumit/coding/sorting/InsertionSortAlgorithm.java">Insertion Sort</a>
         - <a href="src/main/com/sumit/coding/sorting/MergeSortedArray.java">Merge Sorted Array</a>
         - <a href="src/main/com/sumit/coding/sorting/MoveZeroesProblem.java">Move Zeroes</a>
+        - <a href="src/main/com/sumit/coding/sorting/CheckIfArrayIsSortedAndRotated.java">Check if Array Is Sorted and Rotated</a>
         - <a href="src/main/com/sumit/coding/sorting/MergeSortAlgorithm.java">Merge Sort</a>
         - <a href="src/main/com/sumit/coding/sorting/QuickSortAlgorithm.java">Quick Sort</a>
     * <b>LinkedList</b>
