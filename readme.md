@@ -35,6 +35,7 @@ Competitive Programming Codebase
         - <a href="src/main/com/sumit/coding/sorting/BubbleSortAlgorithm.java">Bubble Sort</a>
         - <a href="src/main/com/sumit/coding/sorting/SelectionSortAlgorithm.java">Selection Sort</a>
         - <a href="src/main/com/sumit/coding/sorting/InsertionSortAlgorithm.java">Insertion Sort</a>
+        - <a href="src/main/com/sumit/coding/sorting/MergeSortedArray.java">Merge Sorted Array</a>
         - <a href="src/main/com/sumit/coding/sorting/MergeSortAlgorithm.java">Merge Sort</a>
         - <a href="src/main/com/sumit/coding/sorting/QuickSortAlgorithm.java">Quick Sort</a>
     * <b>LinkedList</b>

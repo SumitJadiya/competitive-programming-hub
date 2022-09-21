@@ -32,7 +32,7 @@ public class MergeWithoutExtraSpace {
         System.out.println(Arrays.toString(arr2));
     }
 
-    public static void merge(long arr1[], long arr2[], int n, int m) {
+    public static void merge(long[] arr1, long[] arr2, int n, int m) {
 
         int i = 0;
         int j = 0;

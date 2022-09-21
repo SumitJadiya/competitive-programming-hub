@@ -10,14 +10,16 @@ import java.util.Arrays;
 	Rotate the array by ‘n’ index (n can range between 0 to array length)
 
 	User story 2:
-	Sort the array (ascending/descending)
+	Reverse the array
 
 	User story 3:
+	Sort the array (ascending/descending)
+
+	User story 4:
 	search any number “K” in the same array
 
-	User Story 4:
+	User Story 5:
 	find the missing number from 1-9
-
 * */
 public class ArrayOperations {
 
@@ -28,10 +30,16 @@ public class ArrayOperations {
 
         new ArrayOperations().rotate(arr, n);
         System.out.println(Arrays.toString(arr)); // [9, 2, 5, 1, 4, 6, 3, 8]
+
+        new ArrayOperations().reverse(arr, 0, arr.length - 1);
+        System.out.println(Arrays.toString(arr)); // [8, 3, 6, 4, 1, 5, 2, 9]
+
         new ArrayOperations().sortArray(arr); // [1, 2, 3, 4, 5, 6, 8, 9]
         System.out.println(Arrays.toString(arr));
-        System.out.println(new ArrayOperations().search(arr, k));
-        System.out.println(new ArrayOperations().returnMissingNumber(arr));
+
+        System.out.println(new ArrayOperations().search(arr, k)); // 5
+
+        System.out.println(new ArrayOperations().returnMissingNumber(arr)); // 7
     }
 
     public void rotate(int[] nums, int k) {
@@ -56,18 +64,18 @@ public class ArrayOperations {
     }
 
     public int search(int[] nums, int target) {
-        int pivot, left = 0, right = nums.length - 1;
-        while (left <= right) {
-            pivot = left + (right - left) / 2;
+        int pivot, start = 0, end = nums.length - 1;
+        while (start <= end) {
+            pivot = start + (end - start) / 2;
             if (nums[pivot] == target) return pivot;
-            if (target < nums[pivot]) right = pivot - 1;
-            else left = pivot + 1;
+            if (target < nums[pivot]) end = pivot - 1;
+            else start = pivot + 1;
         }
         return -1;
     }
 
     public int returnMissingNumber(int[] nums) {
         int arraySum = Arrays.stream(nums).sum();
-        return 45-arraySum;
+        return 45 - arraySum;
     }
 }
