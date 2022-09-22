@@ -14,6 +14,7 @@ Competitive Programming Codebase
         - <a href="src/main/com/sumit/coding/arrays/FindAllDuplicatesInArray.java">Find All Duplicates in an Array</a>
         - <a href="src/main/com/sumit/coding/arrays/ArraySwapAlternate.java">Swap alternate elements in array</a>
         - <a href="src/main/com/sumit/coding/arrays/SortZeroOneTwo.java">Sort 0 1 2</a>
+        - <a href="src/main/com/sumit/coding/arrays/SumOfTwoArrays.java">Sum Of Two Arrays</a>
     * <b>Searching</b>
         - <a href="src/main/com/sumit/coding/searching/BinarySearch.java">Binary Search</a>
         - <a href="src/main/com/sumit/coding/searching/PeakIndexInMountainArray.java">Peak Index in a Mountain Array</a>
