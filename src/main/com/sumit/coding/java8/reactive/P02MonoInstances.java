@@ -10,30 +10,29 @@ public class P02MonoInstances {
 
 //========================================================================================
 
-    // TODO Return an empty Mono
+    // Return an empty Mono
     static Mono<String> emptyMono() {
         return Mono.empty();
     }
 
 //========================================================================================
 
-    // TODO Return a Mono that never emits any signal
+    // Return a Mono that never emits any signal
     static Mono<String> monoWithNoSignal() {
         return Mono.never();
     }
 
 //========================================================================================
 
-    // TODO Return a Mono that contains a "foo" value
+    // Return a Mono that contains a "foo" value
     Mono<String> fooMono() {
         return Mono.just("foo");
     }
 
 //========================================================================================
 
-    // TODO Create a Mono that emits an IllegalStateException
+    // Create a Mono that emits an IllegalStateException
     Mono<String> errorMono() {
         return Mono.error(new IllegalStateException());
     }
-
 }
