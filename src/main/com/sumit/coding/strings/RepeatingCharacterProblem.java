@@ -51,18 +51,17 @@ public class RepeatingCharacterProblem {
     private static char maxOccuringCharacter(String str) {
 
         int len = str.length();
-        int[] count = new int[256];
+        int[] count = new int[26];
         char result = 'a';
         int max = Integer.MIN_VALUE;
 
-        for (int i = len - 1; i >= 0; i--) {
-            count[str.charAt(i)]++;
-        }
+        for (int i = len - 1; i >= 0; i--)
+            count[str.charAt(i) - 'a']++;
 
-        for (int i = 0; i < 256; i++) {
+        for (int i = 0; i < 26; i++) {
 
             if (count[i] > max) {
-                result = (char) i;
+                result = (char) (i + 'a');
                 max = count[i];
             }
         }
