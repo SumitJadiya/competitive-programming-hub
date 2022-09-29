@@ -7,27 +7,24 @@ package main.com.sumit.coding.math;
 public class PrimeNumberProblem {
     public static void main(String[] args) {
         PrimeNumberProblem primeNumberProblem = new PrimeNumberProblem();
-        if (primeNumberProblem.isPrime(1) == 1)
-            System.out.println("Yes");
-        else
-            System.out.println("No");
+        System.out.println((primeNumberProblem.isPrime(11)) ? "Yes" : "No");
     }
 
     /**
      * Method that checks for prime number
      *
-     * @param A input
+     * @param num input
      * @return boolean value that describes whether number is prime or not
      */
-    private int isPrime(int A) {
-        int upperLimit = (int) (Math.sqrt(A));
-        for (int i = 2; i <= upperLimit; i++) {
-            if (A % i == 0) return 0;
-        }
+    public boolean isPrime(int num) {
+        int sqrtNum = (int) Math.sqrt(num);
 
-        if (A == 1)
-            return 0;
+        if (num <= 1) return false;
 
-        return 1;
+        for (int i = 2; i <= sqrtNum; i++)
+            if (num % i == 0)
+                return false;
+
+        return true;
     }
 }
