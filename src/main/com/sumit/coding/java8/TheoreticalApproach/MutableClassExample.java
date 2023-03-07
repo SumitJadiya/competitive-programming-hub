@@ -39,7 +39,6 @@ public final class MutableClassExample {
         h1.put("2", "second");
 
         String s = "original";
-
         int i = 10;
 
         MutableClassExample ce = new MutableClassExample(i, s, h1);
@@ -48,10 +47,12 @@ public final class MutableClassExample {
         System.out.println("ce id: " + ce.getId());
         System.out.println("ce name: " + ce.getName());
         System.out.println("ce testMap: " + ce.getTestMap());
+
         // change the local variable values
         i = 20;
         s = "modified";
         h1.put("3", "third");
+
         // print the values again
         System.out.println("ce id after local variable change: " + ce.getId());
         System.out.println("ce name after local variable change: " + ce.getName());
