@@ -14,9 +14,15 @@ public class CountPrimeProblem {
         int n = 10;
 
         CountPrimeProblem countPrimeProblem = new CountPrimeProblem();
-        System.out.println(countPrimeProblem.countPrimes(n));
-
+        long startTime = System.nanoTime();
         System.out.println(segmentedSieve(n));
+        System.out.println((System.nanoTime() - startTime)/ 1_000_000_000.0 + " Sec");
+
+        startTime = System.nanoTime();
+        System.out.println(countPrimeProblem.countPrimes(n));
+        System.out.println((System.nanoTime() - startTime)/ 1_000_000_000.0 + " Sec");
+
+
     }
 
     /*
