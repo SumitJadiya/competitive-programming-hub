@@ -11,7 +11,7 @@ import java.util.List;
 public class CountPrimeProblem {
 
     public static void main(String[] args) {
-        int n = 40;
+        int n = 10;
 
         CountPrimeProblem countPrimeProblem = new CountPrimeProblem();
         System.out.println(countPrimeProblem.countPrimes(n));
