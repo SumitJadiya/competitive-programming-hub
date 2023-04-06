@@ -17,6 +17,10 @@ Competitive Programming Codebase
         - <a href="src/main/com/sumit/coding/arrays/SumOfTwoArrays.java">Sum Of Two Arrays</a>
         - <a href="src/main/com/sumit/coding/strings/PermutationInString.java">Permutation in String</a>
         - <a href="src/main/com/sumit/coding/arrays/CountPrimeProblem.java">Count Prime</a>
+    * <b>Sliding Window Algorithm</b>
+        - <a href="src/main/com/sumit/coding/algorithms/slidingWindow/MaxConsecutiveOnes.java">Max Consecutive 1's</a>
+        - <a href="src/main/com/sumit/coding/algorithms/slidingWindow/MaxConsecutiveOnesII.java">Max Consecutive 1's - II</a>
+        - <a href="src/main/com/sumit/coding/algorithms/slidingWindow/MaxConsecutiveOnesIII.java">Max Consecutive 1's - III</a>
     * <b>Searching</b>
         - <a href="src/main/com/sumit/coding/searching/BinarySearch.java">Binary Search</a>
         - <a href="src/main/com/sumit/coding/searching/PeakIndexInMountainArray.java">Peak Index in a Mountain Array</a>
@@ -40,7 +44,8 @@ Competitive Programming Codebase
         - <a href="src/main/com/sumit/coding/sorting/InsertionSortAlgorithm.java">Insertion Sort</a>
         - <a href="src/main/com/sumit/coding/sorting/MergeSortedArray.java">Merge Sorted Array</a>
         - <a href="src/main/com/sumit/coding/sorting/MoveZeroesProblem.java">Move Zeroes</a>
-        - <a href="src/main/com/sumit/coding/sorting/CheckIfArrayIsSortedAndRotated.java">Check if Array Is Sorted and Rotated</a>
+        - <a href="src/main/com/sumit/coding/sorting/CheckIfArrayIsSortedAndRotated.java">Check if Array Is Sorted and
+          Rotated</a>
         - <a href="src/main/com/sumit/coding/sorting/MergeSortAlgorithm.java">Merge Sort</a>
         - <a href="src/main/com/sumit/coding/sorting/QuickSortAlgorithm.java">Quick Sort</a>
     * <b>LinkedList</b>
