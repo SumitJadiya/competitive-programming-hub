@@ -21,6 +21,7 @@ Competitive Programming Codebase
         - <a href="src/main/com/sumit/coding/algorithms/slidingWindow/MaxConsecutiveOnes.java">Max Consecutive 1's</a>
         - <a href="src/main/com/sumit/coding/algorithms/slidingWindow/MaxConsecutiveOnesII.java">Max Consecutive 1's - II</a>
         - <a href="src/main/com/sumit/coding/algorithms/slidingWindow/MaxConsecutiveOnesIII.java">Max Consecutive 1's - III</a>
+        - <a href="src/main/com/sumit/coding/algorithms/slidingWindow/LongestNiceSubstring.java">Longest Nice Substring</a>
     * <b>Searching</b>
         - <a href="src/main/com/sumit/coding/searching/BinarySearch.java">Binary Search</a>
         - <a href="src/main/com/sumit/coding/searching/PeakIndexInMountainArray.java">Peak Index in a Mountain Array</a>
