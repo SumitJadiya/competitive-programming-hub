@@ -9,8 +9,8 @@ public class PrimeFactorizationProblem {
         int num = 160;
         int someNumber = 13;
 
-        System.out.println(" " + new test().findPrimeFactors(num));
-        System.out.println(" " + new test().isPrime(someNumber));
+        System.out.println(" " + new PrimeFactorizationProblem().findPrimeFactors(num));
+        System.out.println(" " + new PrimeFactorizationProblem().isPrime(someNumber));
     }
 
     public List<Integer> findPrimeFactors(int num) {
