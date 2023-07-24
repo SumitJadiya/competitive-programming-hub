@@ -1,5 +1,7 @@
 package main.com.sumit.coding.searching;
 
+import static java.util.Arrays.binarySearch;
+
 /*
  * Search in Rotated Sorted Array
  * Problem URL : https://leetcode.com/problems/search-in-rotated-sorted-array/
@@ -38,6 +40,12 @@ public class SearchInRotatedSortedArray {
             start = pivotIdx;
         else end = pivotIdx - 1;
 
+        return binarySearch(nums, start, end, target);
+    }
+
+    /*
+    public int binarySearch(int[] nums, int start, int end, int target) {
+
         int mid = start + (end - start) / 2;
 
         while (start <= end) {
@@ -47,6 +55,8 @@ public class SearchInRotatedSortedArray {
 
             mid = start + (end - start) / 2;
         }
+
         return -1;
     }
+    * */
 }
