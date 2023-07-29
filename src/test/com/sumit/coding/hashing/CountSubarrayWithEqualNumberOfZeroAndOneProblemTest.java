@@ -5,7 +5,7 @@ import org.junit.Assert;
 import org.junit.Before;
 import org.junit.Test;
 
-import main.com.sumit.coding.hashing.CountSubarrayWithEqualNumberOfZeroAndOneProblem;
+import main.com.sumit.coding.topics.hashing.CountSubarrayWithEqualNumberOfZeroAndOneProblem;
 
 public class CountSubarrayWithEqualNumberOfZeroAndOneProblemTest {
 

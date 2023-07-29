@@ -7,7 +7,7 @@ import org.junit.Assert;
 import org.junit.Before;
 import org.junit.Test;
 
-import main.com.sumit.coding.arrays.ReplaceWithGreatestElementOnRight;
+import main.com.sumit.coding.topics.arrays.ReplaceWithGreatestElementOnRight;
 
 public class ReplaceWithGreatestElementOnRightTest {
 

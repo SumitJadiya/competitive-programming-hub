@@ -5,7 +5,7 @@ import org.junit.Assert;
 import org.junit.Before;
 import org.junit.Test;
 
-import main.com.sumit.coding.hashing.ZeroSumSubarrayProblem;
+import main.com.sumit.coding.topics.hashing.ZeroSumSubarrayProblem;
 
 public class ZeroSumSubarrayProblemTest {
 

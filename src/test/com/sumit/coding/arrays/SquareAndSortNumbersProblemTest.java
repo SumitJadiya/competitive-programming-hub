@@ -9,7 +9,7 @@ import org.junit.Assert;
 import org.junit.Before;
 import org.junit.Test;
 
-import main.com.sumit.coding.arrays.SquareAndSortNumbersProblem;
+import main.com.sumit.coding.topics.arrays.SquareAndSortNumbersProblem;
 
 public class SquareAndSortNumbersProblemTest {
 

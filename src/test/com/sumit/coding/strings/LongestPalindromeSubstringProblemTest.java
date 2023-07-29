@@ -5,7 +5,7 @@ import org.junit.Assert;
 import org.junit.Before;
 import org.junit.Test;
 
-import main.com.sumit.coding.strings.LongestPalindromeSubstringProblem;
+import main.com.sumit.coding.topics.strings.LongestPalindromeSubstringProblem;
 
 public class LongestPalindromeSubstringProblemTest {
 

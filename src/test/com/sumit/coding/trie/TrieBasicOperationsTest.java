@@ -8,7 +8,7 @@ import org.junit.Assert;
 import org.junit.Before;
 import org.junit.Test;
 
-import main.com.sumit.coding.trie.basicOperations.Trie;
+import main.com.sumit.coding.topics.trie.basicOperations.Trie;
 
 public class TrieBasicOperationsTest {
 
