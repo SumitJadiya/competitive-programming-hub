@@ -9,7 +9,7 @@ public class AnagramProblem {
         final String string1 = "geeksforgeeks";
         final String string2 = "forgeeksgeeks";
 
-        boolean result = AnagramProblem.checkForAnagram(string1, string2);
+        boolean result = AnagramProblem.isAnagram(string1, string2);
         System.out.println(result);
     }
 
@@ -17,7 +17,7 @@ public class AnagramProblem {
      * Time Complexity : O(n)
      * Space Complexity : O(1)
      * */
-    private static boolean checkForAnagram(String string1, String string2) {
+    private static boolean isAnagram(String string1, String string2) {
         if (string1.length() != string2.length())
             return false;
 
