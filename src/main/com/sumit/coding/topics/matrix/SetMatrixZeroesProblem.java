@@ -1,6 +1,8 @@
 package main.com.sumit.coding.topics.matrix;
 
 import java.util.Arrays;
+import java.util.HashSet;
+import java.util.Set;
 
 /*
  * Problem URL : https://leetcode.com/problems/set-matrix-zeroes/
@@ -11,6 +13,12 @@ public class SetMatrixZeroesProblem {
     public static void main(String[] args) {
         A = new int[][]{{1, 2, 3}, {4, 0, 6}, {7, 8, 9}};
         setZeroes(A);
+        printA();
+
+        System.out.println("-------- ");
+
+        A = new int[][]{{1, 2, 3}, {4, 0, 6}, {7, 8, 9}};
+        new SetMatrixZeroesProblem().setZeroes_secondApproach(A);
         printA();
     }
 
@@ -23,7 +31,7 @@ public class SetMatrixZeroesProblem {
     }
 
     /*
-     * Time Complexity : O(m+n)
+     * Time Complexity : O(m x n)
      * Space Complexity : O(1)
      * */
     public static void setZeroes(int[][] matrix) {
@@ -50,4 +58,31 @@ public class SetMatrixZeroesProblem {
             for (int i = 0; i < matrix.length; i++)
                 matrix[i][0] = 0;
     }
+
+    /*
+     * Time Complexity : O(m x n)
+     * Space Complexity : O(m + n)
+     * */
+    public void setZeroes_secondApproach(int[][] matrix) {
+        int R = matrix.length;
+        int C = matrix[0].length;
+
+        Set<Integer> rows = new HashSet<>();
+        Set<Integer> cols = new HashSet<>();
+
+        for (int i = 0; i < R; i++) {
+            for (int j = 0; j < C; j++) {
+                if (matrix[i][j] == 0) {
+                    rows.add(i);
+                    cols.add(j);
+                }
+            }
+        }
+
+        for (int i = 0; i < R; i++)
+            for (int j = 0; j < C; j++)
+                if (rows.contains(i) || cols.contains(j))
+                    matrix[i][j] = 0;
+    }
+
 }
