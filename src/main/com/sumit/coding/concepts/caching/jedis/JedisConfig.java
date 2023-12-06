@@ -1,4 +1,4 @@
-package com.sumit.coding.concepts.caching.jedis;
+package main.com.sumit.coding.concepts.caching.jedis;
 
 import redis.clients.jedis.Jedis;
 import redis.clients.jedis.JedisPool;
