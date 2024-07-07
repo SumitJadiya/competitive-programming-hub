@@ -5,12 +5,34 @@ import lombok.Getter;
 import lombok.Setter;
 
 import java.util.ArrayList;
+import java.util.Arrays;
 import java.util.List;
+import java.util.Objects;
 
 public class DesignHashMap {
+    int keySpace;
+    Bucket[] buckets;
 
     public DesignHashMap() {
-        // Write your code here
+        keySpace = 2069;
+        buckets = new Bucket[2069];
+        for (int i = 0; i < buckets.length; i++)
+            buckets[i] = new Bucket();
+    }
+
+    public void put(int key, int value) {
+        int hashKey = calculateHash(key);
+        buckets[hashKey].update(key, value);
+    }
+
+    public int get(int key) {
+        int hashKey = calculateHash(key);
+        return buckets[hashKey].get(key);
+    }
+
+    public void remove(int key) {
+        int hashKey = calculateHash(key);
+        buckets[hashKey].remove(key);
     }
 
     private static int calculateHash(int number) {
@@ -18,47 +40,49 @@ public class DesignHashMap {
         return number % hashBase;
     }
 
-    public void put(int key, int value) {
-        // Write your code here
-    }
-
-    public int get(int key) {
-        // Replace this placeholder return statement with your code
-        return -1;
-    }
-
-    public void remove(int key) {
-        // Write your code here
-    }
-
     public static void main(String[] args) {
-        System.out.println(calculateHash(2069));
-        Bucket[] buckets = new Bucket[2069];
-        for (int i = 0; i < buckets.length; i++)
-            buckets[i] = new Bucket();
+        DesignHashMap inputHashMap = new DesignHashMap();
+        List<Integer> keys = Arrays.asList(5, 2069, 2070, 2073, 4138, 2068);
+        List<Integer> keysList = new ArrayList<>(Arrays.asList(5, 2069, 2070, 2073, 4138, 2068));
+        List<Integer> values = Arrays.asList(100, 200, 400, 500, 1000, 5000);
+        List<String> funcs = Arrays.asList("Get", "Get", "Put", "Get", "Put", "Get", "Get", "Remove", "Get", "Get", "Remove", "Get");
+        List<List<Integer>> funcKeys = Arrays.asList(
+                List.of(5),
+                List.of(2073),
+                Arrays.asList(2073, 50),
+                List.of(2073),
+                Arrays.asList(121, 110),
+                List.of(121),
+                List.of(2068),
+                List.of(2069),
+                List.of(2069),
+                List.of(2071),
+                List.of(2071),
+                List.of(2071)
+        );
 
-        // Example usage:
-        int[][] keyValuePair = {{1, 1000}, {2070, 2000}, {2068, 3000}};
-        int i = 1;
-        for (int[] pair : keyValuePair) {
-            int key = pair[0];
-            int value = pair[1];
-            int hashKey = calculateHash(key);
-            System.out.println(i + ".\tInserting key-value pair: Key = " + key + ", Value = " + value + ", HashKey = " + hashKey);
-            buckets[hashKey].update(key, value);
+        for (int i = 0; i < keys.size(); i++)
+            inputHashMap.put(keys.get(i), values.get(i));
 
-            // Retrieving values
-            System.out.println("\tRetrieving value for key " + key + ": " + buckets[hashKey].get(key) + "\n");
-            i++;
+        for (int i = 0; i < funcs.size(); i++) {
+            if (Objects.equals(funcs.get(i), "Put")) {
+                System.out.println(i + 1 + ".\t put(" + funcKeys.get(i).get(0) + ", " + funcKeys.get(i).get(1) + ")");
+                if (!(keysList.contains(funcKeys.get(i).get(0))))
+                    keysList.add(funcKeys.get(i).get(0));
+
+                inputHashMap.put(funcKeys.get(i).get(0), funcKeys.get(i).get(1));
+            } else if (Objects.equals(funcs.get(i), "Get")) {
+                System.out.println(i + 1 + ".\t get(" + funcKeys.get(i).get(0) + ")");
+                System.out.println("\t Value returned: " + inputHashMap.get(funcKeys.get(i).get(0)));
+            } else if (Objects.equals(funcs.get(i), "Remove")) {
+                System.out.println(i + 1 + ". \t remove(" + funcKeys.get(i).get(0) + ")");
+                inputHashMap.remove(funcKeys.get(i).get(0));
+            }
+
+            System.out.println(new String(new char[100]).replace('\0', '-'));
         }
 
-        // Removing a key
-        int keyToRemove = keyValuePair[keyValuePair.length - 1][0];
-        System.out.println(i + ".\tRemoving key " + keyToRemove);
-        buckets[calculateHash(keyToRemove)].remove(keyToRemove);
-        System.out.println("\tValue for key " + keyToRemove + " after removal: " + buckets[calculateHash(keyToRemove)].get(keyToRemove));  // Output: -1 (removed)
     }
-
 }
 
 class Bucket {
