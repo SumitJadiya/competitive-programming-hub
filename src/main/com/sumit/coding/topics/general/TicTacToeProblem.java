@@ -5,6 +5,20 @@ import java.util.Arrays;
 import java.util.Collections;
 import java.util.List;
 
+/*
+ * Suppose that two players are playing a tic-tac-toe game on an 𝑛×𝑛 board. They’re following specific rules to play and win the game:
+ *
+ * A move is guaranteed to be valid if a mark is placed on an empty block.
+ * No more moves are allowed once a winning condition is reached.
+ * A player who succeeds in placing n of their marks in a horizontal, vertical, or diagonal row wins the game.
+ *
+ * Implement a TicTacToe class, which will be used by two players to play the game and win fairly.
+ *
+ * Keep in mind the following functionalities that need to be implemented:
+ * Constructor, the constructor, which initializes an object of TicTacToe, allowing the players to play on a board of size n×n.
+ * move(row, col, player) indicates that the player with the ID, player, places their mark on the cell (row, col).
+ * The move is guaranteed to be a valid move. At each move, this function returns the player ID if the current player wins and returns 0 if no one wins.
+ * */
 public class TicTacToeProblem {
 
     List<Integer> rows;
@@ -12,9 +26,6 @@ public class TicTacToeProblem {
     int diagonal;
     int antiDiagonal;
 
-    // TicTacToe class contains rows, cols, diagonal,
-    // and anti_diagonal to create a board.
-    // Constructor is used to create a board of size n * n.
     public TicTacToeProblem(int n) {
         this.rows = new ArrayList<>(Collections.nCopies(n, 0));
         this.cols = new ArrayList<>(Collections.nCopies(n, 0));
@@ -22,8 +33,6 @@ public class TicTacToeProblem {
         antiDiagonal = 0;
     }
 
-    // move function will allow the players to play the game
-    // for given row and col.
     public int move(int row, int col, int player) {
         int currentPlayer = (player == 1) ? 1 : -1;
         int n = rows.size();
