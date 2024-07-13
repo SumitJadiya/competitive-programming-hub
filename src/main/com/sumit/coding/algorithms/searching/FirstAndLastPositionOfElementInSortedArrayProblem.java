@@ -25,22 +25,22 @@ public class FirstAndLastPositionOfElementInSortedArrayProblem {
      * */
     public static int[] firstAndLastPosition(ArrayList<Integer> arr, int n, int k) {
         ArrayList<Integer> result = new ArrayList<>();
-        result.add(findOccurance(arr.stream().mapToInt(Integer::intValue).toArray(), n, k, "FIRST"));
-        result.add(findOccurance(arr.stream().mapToInt(Integer::intValue).toArray(), n, k, "LAST"));
+        result.add(findOccurrence(arr.stream().mapToInt(Integer::intValue).toArray(), n, k, "FIRST"));
+        result.add(findOccurrence(arr.stream().mapToInt(Integer::intValue).toArray(), n, k, "LAST"));
 
         return result.stream().mapToInt(Integer::intValue).toArray();
     }
 
-    public static int findOccurance(int[] arr, int n, int k, String occurance) {
+    public static int findOccurrence(int[] arr, int n, int k, String occurrence) {
         int start = 0, end = n - 1;
         int ans = -1;
         int mid = start + (end - start) / 2;
 
         while (start <= end) {
-            if (arr[mid] == k && occurance.equals("FIRST")) {
+            if (arr[mid] == k && occurrence.equals("FIRST")) {
                 ans = mid;
                 end = mid - 1;
-            } else if (arr[mid] == k && occurance.equals("LAST")) {
+            } else if (arr[mid] == k && occurrence.equals("LAST")) {
                 ans = mid;
                 start = mid + 1;
             } else if (arr[mid] < k) {
