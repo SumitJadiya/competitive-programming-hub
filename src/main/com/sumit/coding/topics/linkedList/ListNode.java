@@ -15,4 +15,20 @@ public class ListNode {
             head = head.next;
         }
     }
+
+    protected static ListNode reverse(ListNode head) {
+        ListNode curr;
+        ListNode prev = null;
+        ListNode next = head;
+
+        while (next != null) {
+            curr = next;
+            next = curr.next;
+            curr.next = prev;
+            prev = curr;
+        }
+
+        return prev;
+    }
+
 }
