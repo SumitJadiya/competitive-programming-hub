@@ -57,22 +57,52 @@ public class TreeNode {
         queue.add(root);
 
         while (!queue.isEmpty()) {
-            int size = queue.size();
-            List<Integer> l = new ArrayList<>();
+            int levelSize = queue.size();
+            List<Integer> innerResult = new ArrayList<>();
 
-            while (size-- > 0) {
-                TreeNode temp = queue.remove();
-                l.add(temp.key);
-                if (temp.left != null)
-                    queue.add(temp.left);
-                if (temp.right != null)
-                    queue.add(temp.right);
+            while (levelSize-- > 0) {
+                TreeNode node = queue.remove();
+                innerResult.add(node.key);
+                if (node.left != null)
+                    queue.add(node.left);
+                if (node.right != null)
+                    queue.add(node.right);
             }
 
-            results.add(l);
+            results.add(innerResult);
         }
 
         return results;
+    }
+
+    public static List<List<Integer>> print_using_bfs_approach_two(TreeNode root) {
+        List<List<Integer>> result = new ArrayList<>();
+        List<Integer> innerResult = new ArrayList<>();
+
+        Queue<TreeNode> queue = new LinkedList<>();
+
+        if (root == null) return result;
+
+        queue.offer(root);
+        queue.offer(null);
+
+        while (!queue.isEmpty()) {
+            TreeNode value = queue.poll();
+            if (value == null) {
+                result.add(innerResult);
+                innerResult = new ArrayList<>();
+                if (!queue.isEmpty())
+                    queue.offer(null);
+            } else {
+                innerResult.add(value.val);
+                if (value.left != null)
+                    queue.offer(value.left);
+                if (value.right != null)
+                    queue.offer(value.right);
+            }
+        }
+
+        return result;
     }
 
     @Override
