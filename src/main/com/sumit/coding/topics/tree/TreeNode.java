@@ -1,10 +1,15 @@
 package com.sumit.coding.topics.tree;
 
+import lombok.Getter;
+import lombok.Setter;
+
 import java.util.ArrayList;
 import java.util.LinkedList;
 import java.util.List;
 import java.util.Queue;
 
+@Setter
+@Getter
 public class TreeNode {
 
     int key;
@@ -22,30 +27,6 @@ public class TreeNode {
             if (node.getRight() != null) toString(string.append(", "), node.getRight());
         }
         return string;
-    }
-
-    public int getKey() {
-        return key;
-    }
-
-    public void setKey(int key) {
-        this.key = key;
-    }
-
-    public TreeNode getLeft() {
-        return left;
-    }
-
-    public void setLeft(TreeNode left) {
-        this.left = left;
-    }
-
-    public TreeNode getRight() {
-        return right;
-    }
-
-    public void setRight(TreeNode right) {
-        this.right = right;
     }
 
     public static List<List<Integer>> print_using_bfs(TreeNode root) {
