@@ -1,4 +1,4 @@
-package main.com.sumit.coding.topics.tree;
+package com.sumit.coding.topics.tree;
 
 /*
  * Problem URL : https://leetcode.com/problems/convert-sorted-array-to-binary-search-tree

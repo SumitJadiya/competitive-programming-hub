@@ -1,4 +1,4 @@
-package main.com.sumit.coding.topics.tree;
+package com.sumit.coding.topics.tree;
 
 /*
  * Problem URL : https://leetcode.com/problems/insert-into-a-binary-search-tree/

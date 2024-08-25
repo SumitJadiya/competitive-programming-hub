@@ -1,4 +1,4 @@
-package main.com.sumit.coding.topics.tree;
+package com.sumit.coding.topics.tree;
 
 import java.util.HashSet;
 import java.util.Set;

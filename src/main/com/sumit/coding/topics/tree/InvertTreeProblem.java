@@ -1,6 +1,6 @@
-package main.com.sumit.coding.topics.tree;
+package com.sumit.coding.topics.tree;
 
-import static main.com.sumit.coding.topics.tree.TreeNode.print_using_bfs;
+import static com.sumit.coding.topics.tree.TreeNode.print_using_bfs;
 
 /*
  * Problem URL : https://leetcode.com/problems/invert-binary-tree/

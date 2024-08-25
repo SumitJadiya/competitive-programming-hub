@@ -1,4 +1,4 @@
-package main.com.sumit.coding.topics.tree;
+package com.sumit.coding.topics.tree;
 
 // TODO : Correct this problem
 public class MergeTwoBinaryTreeProblem {

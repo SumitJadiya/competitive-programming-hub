@@ -1,4 +1,4 @@
-package main.com.sumit.coding.topics.tree;
+package com.sumit.coding.topics.tree;
 
 public class SumOfNodesWithEvenValuedGrandparant {
     private static int sum;

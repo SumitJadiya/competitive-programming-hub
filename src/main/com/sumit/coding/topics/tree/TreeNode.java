@@ -1,4 +1,4 @@
-package main.com.sumit.coding.topics.tree;
+package com.sumit.coding.topics.tree;
 
 import java.util.ArrayList;
 import java.util.LinkedList;
@@ -94,7 +94,7 @@ public class TreeNode {
                 if (!queue.isEmpty())
                     queue.offer(null);
             } else {
-                innerResult.add(value.val);
+                innerResult.add(value.key);
                 if (value.left != null)
                     queue.offer(value.left);
                 if (value.right != null)

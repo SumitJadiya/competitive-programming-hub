@@ -1,4 +1,4 @@
-package main.com.sumit.coding.topics.tree;
+package com.sumit.coding.topics.tree;
 
 import java.util.ArrayList;
 import java.util.LinkedList;
