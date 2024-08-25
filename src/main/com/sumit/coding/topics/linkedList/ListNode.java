@@ -1,4 +1,4 @@
-package main.com.sumit.coding.topics.linkedList;
+package com.sumit.coding.topics.linkedList;
 
 public class ListNode {
     int val;

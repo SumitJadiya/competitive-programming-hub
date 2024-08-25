@@ -1,6 +1,6 @@
-package main.com.sumit.coding.topics.linkedList;
+package com.sumit.coding.topics.linkedList;
 
-import static main.com.sumit.coding.topics.linkedList.ListNode.printLinkedList;
+import static com.sumit.coding.topics.linkedList.ListNode.printLinkedList;
 
 /*
  *

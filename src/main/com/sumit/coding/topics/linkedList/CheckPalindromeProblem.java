@@ -1,6 +1,6 @@
-package main.com.sumit.coding.topics.linkedList;
+package com.sumit.coding.topics.linkedList;
 
-import static main.com.sumit.coding.topics.linkedList.ListNode.reverse;
+import static com.sumit.coding.topics.linkedList.ListNode.reverse;
 
 /*
  * Problem URL : https://leetcode.com/problems/palindrome-linked-list/
@@ -19,8 +19,7 @@ public class CheckPalindromeProblem {
 
     public static boolean isPalindrome(ListNode head) {
 
-        if (head == null || head.next == null)
-            return true;
+        if (head == null || head.next == null) return true;
 
         ListNode slow = head;
         ListNode fast = head;
@@ -34,8 +33,7 @@ public class CheckPalindromeProblem {
         ListNode secondHalfHead = reverse(slow);
 
         while (secondHalfHead != null) {
-            if (secondHalfHead.val != firstHalfHead.val)
-                return false;
+            if (secondHalfHead.val != firstHalfHead.val) return false;
 
             secondHalfHead = secondHalfHead.next;
             firstHalfHead = firstHalfHead.next;

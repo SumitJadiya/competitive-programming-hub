@@ -1,4 +1,4 @@
-package main.com.sumit.coding.topics.linkedList;
+package com.sumit.coding.topics.linkedList;
 
 /*
  * Problem URL : https://leetcode.com/problems/remove-linked-list-elements/
