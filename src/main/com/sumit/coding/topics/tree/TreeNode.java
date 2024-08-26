@@ -16,7 +16,7 @@ public class TreeNode {
     protected TreeNode left;
     protected TreeNode right;
 
-    TreeNode(int x) {
+    public TreeNode(int x) {
         key = x;
     }
 

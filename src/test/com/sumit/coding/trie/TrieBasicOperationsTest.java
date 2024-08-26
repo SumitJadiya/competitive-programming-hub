@@ -1,14 +1,13 @@
 package test.com.sumit.coding.trie;
 
-import java.util.ArrayList;
-import java.util.List;
-
+import com.sumit.coding.topics.trie.basicOperations.Trie;
 import org.junit.After;
 import org.junit.Assert;
 import org.junit.Before;
 import org.junit.Test;
 
-import main.com.sumit.coding.topics.trie.basicOperations.Trie;
+import java.util.ArrayList;
+import java.util.List;
 
 public class TrieBasicOperationsTest {
 
@@ -24,42 +23,41 @@ public class TrieBasicOperationsTest {
         setOfStrings.add("pprt");
         setOfStrings.add("psst");
         setOfStrings.add("qqrs");
-        setOfStrings.add("pqrs");
+        setOfStrings.add("Sumit");
         trie = new Trie();
         setOfStrings.forEach(trie::insert);
     }
 
     @Test
     public void test_countOfStrings() {
-        Assert.assertEquals(2, trie.query("pqrs"));
-        Assert.assertEquals(1, trie.query("pprt"));
-        Assert.assertEquals(1, trie.query("psst"));
-        Assert.assertEquals(1, trie.query("qqrs"));
+        Assert.assertTrue(trie.query("pqrs"));
+        Assert.assertTrue(trie.query("pprt"));
+        Assert.assertTrue(trie.query("psst"));
+        Assert.assertTrue(trie.query("qqrs"));
     }
 
     @Test
     public void test_queryNotFound() {
-        Assert.assertEquals(0, trie.query("asasds"));
+        Assert.assertFalse(trie.query("asasds"));
     }
 
     @Test
     public void test_insertNewString() {
         trie.insert("pqrs");
-        Assert.assertEquals(3, trie.query("pqrs"));
+        Assert.assertTrue(trie.query("pqrs"));
     }
 
     @Test
     public void test_deletePreviousString() {
         trie.delete("pqrs");
-        Assert.assertEquals(1, trie.query("pqrs"));
+        Assert.assertFalse(trie.query("pqrs"));
     }
 
     @Test
     public void test_updatePreviousString() {
         trie.update("pqrs", "psst");
-        Assert.assertEquals(2, trie.query("psst"));
+        Assert.assertTrue(trie.query("psst"));
     }
-
 
     @Test
     @After
@@ -67,5 +65,4 @@ public class TrieBasicOperationsTest {
         setOfStrings = null;
         trie = null;
     }
-
 }

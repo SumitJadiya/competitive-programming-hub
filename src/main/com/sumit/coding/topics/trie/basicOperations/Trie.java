@@ -1,4 +1,4 @@
-package main.com.sumit.coding.topics.trie.basicOperations;
+package com.sumit.coding.topics.trie.basicOperations;
 
 /**
  * Class that resembles trie data structure
@@ -6,65 +6,61 @@ package main.com.sumit.coding.topics.trie.basicOperations;
 public class Trie {
     final TrieNode root;
 
-    /**
-     * Constructor
-     */
     public Trie() {
         this.root = new TrieNode();
     }
 
-    /**
-     * method to perform searching operations using trie
-     * @param s input string
-     * @return frequency of string in trie data structure
-     */
-    public int query(String s) {
-        TrieNode current = root;
-        for (int i = 0; i < s.length(); i++) {
-            if (current == null)
-                return 0;
 
-            current = current.next(s.charAt(i));
+    /**
+     * @param word
+     * @return
+     */
+    public boolean query(String word) {
+        TrieNode node = root;
+        for (char ch : word.toCharArray()) {
+            node = node.getChild().get(ch);
+            if (node == null)
+                return false;
         }
-        return current.terminating;
+        return node.isEndOfWord();
     }
 
     /**
-     * @param s Input String
+     * @param word
      */
-    public void insert(final String s) {
-        TrieNode current = root;
-
-        for (int i = 0; i < s.length(); i++) {
-            if (current.trieNodes[s.charAt(i) - 'a'] == null)
-                current.trieNodes[s.charAt(i) - 'a'] = new TrieNode();
-
-            current = current.next(s.charAt(i));
+    public void insert(final String word) {
+        TrieNode node = root;
+        for (char ch : word.toCharArray()) {
+            node.getChild().putIfAbsent(ch, new TrieNode());
+            node = node.getChild().get(ch);
         }
-        current.terminating++;
+
+        node.setEndOfWord(true);
     }
 
     /**
      * method that deletes the String from trie Data Structure
-     * @param s Input String
+     *
+     * @param word Input String
      */
-    public void delete(final String s) {
-        TrieNode current = root;
+    public void delete(final String word) {
+        TrieNode node = root;
 
-        for (int i = 0; i < s.length(); i++) {
-            if (current == null)
+        for (char ch : word.toCharArray()) {
+            if (node == null)
                 return;
 
-            current = current.next(s.charAt(i));
+            node = node.getChild().get(ch);
         }
-        if (current.terminating > 0)
-            current.terminating--;
+        if (node.isEndOfWord())
+            node.setEndOfWord(false);
         else
             throw new RuntimeException("String doesn't Exist");
     }
 
     /**
      * Method to perform update operation
+     *
      * @param oldString old String that we want to replace
      * @param newString new String
      */

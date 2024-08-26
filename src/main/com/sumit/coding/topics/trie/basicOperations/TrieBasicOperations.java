@@ -1,4 +1,4 @@
-package main.com.sumit.coding.topics.trie.basicOperations;
+package com.sumit.coding.topics.trie.basicOperations;
 
 import java.util.ArrayList;
 import java.util.List;

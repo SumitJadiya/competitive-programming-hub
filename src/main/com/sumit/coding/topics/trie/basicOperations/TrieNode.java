@@ -1,17 +1,19 @@
-package main.com.sumit.coding.topics.trie.basicOperations;
+package com.sumit.coding.topics.trie.basicOperations;
 
-/**
- * TrieNode
- */
+import lombok.Getter;
+import lombok.Setter;
+
+import java.util.HashMap;
+import java.util.Map;
+
+@Getter
+@Setter
 public class TrieNode {
-    final TrieNode[] trieNodes = new TrieNode[26];
-    int terminating;
+    Map<Character, TrieNode> child;
+    boolean isEndOfWord;
 
-    /**
-     * @param c input character
-     * @return trienode
-     */
-    protected TrieNode next(final char c) {
-        return trieNodes[c - 'a'];
+    protected TrieNode() {
+        child = new HashMap<>();
+        isEndOfWord = false;
     }
 }
