@@ -1,58 +1,44 @@
-package main.com.sumit.coding.topics.tree;
-
-class Node {
-    Node left;
-    Node right;
-    private int data;
-
-    public Node(int data) {
-        this.data = data;
-        left = right = null;
-    }
-}
-
-class Height {
-    int h;
-}
-
-class BinaryTree {
-    Node root;
-
-    public int diameter() {
-        Height height = new Height();
-        return diameterOpt(root, height);
-    }
-
-    private int diameterOpt(Node root, Height height) {
-
-        Height lheight = new Height();
-        Height rheight = new Height();
-
-        if (root == null) {
-            height.h = 0;
-            return 0;
-        }
-
-        int ldiameter = diameterOpt(root.left, lheight);
-        int rdiameter = diameterOpt(root.right, rheight);
-
-        height.h = Math.max(lheight.h, rheight.h) + 1;
-
-        return Math.max(lheight.h + rheight.h + 1, Math.max(ldiameter, rdiameter));
-    }
-}
+package com.sumit.coding.topics.tree;
 
 public class DiameterOfBinaryTree {
 
     public static void main(String[] args) {
 
-        BinaryTree tree = new BinaryTree();
-        tree.root = new Node(1);
-        tree.root.left = new Node(2);
-        tree.root.right = new Node(3);
-        tree.root.left.left = new Node(4);
-        tree.root.left.right = new Node(5);
+        TreeNode tree = new TreeNode(1);
+        tree.left = new TreeNode(2);
+        tree.right = new TreeNode(3);
+        tree.left.left = new TreeNode(4);
+        tree.left.right = new TreeNode(5);
+        tree.left.left.left = new TreeNode(6);
+        tree.left.left.right = new TreeNode(7);
 
-        System.out.println("The diameter of given binary tree is : " + tree.diameter());
+        System.out.println("The diameter of given binary tree is : " + diameterOfBinaryTree(tree));
+    }
+
+
+    /**
+     * @param root
+     * @return
+     */
+    public static int diameterOfBinaryTree(TreeNode root) {
+        int[] diameter = new int[1];
+        calculateHeight(root, diameter);
+        return diameter[0];
+    }
+
+    /**
+     * @param node
+     * @param diameter
+     * @return
+     */
+    private static int calculateHeight(TreeNode node, int[] diameter) {
+        if (node == null) return 0;
+
+        int left = calculateHeight(node.left, diameter);
+        int right = calculateHeight(node.right, diameter);
+
+        diameter[0] = Math.max(diameter[0], left + right);
+
+        return Math.max(left, right) + 1;
     }
 }
