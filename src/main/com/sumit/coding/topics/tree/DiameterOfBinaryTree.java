@@ -1,6 +1,7 @@
 package com.sumit.coding.topics.tree;
 
 public class DiameterOfBinaryTree {
+    int diameter;
 
     public static void main(String[] args) {
 
@@ -12,7 +13,7 @@ public class DiameterOfBinaryTree {
         tree.left.left.left = new TreeNode(6);
         tree.left.left.right = new TreeNode(7);
 
-        System.out.println("The diameter of given binary tree is : " + diameterOfBinaryTree(tree));
+        System.out.println("The diameter of given binary tree is : " + new DiameterOfBinaryTree().diameterOfBinaryTree(tree));
     }
 
 
@@ -20,24 +21,22 @@ public class DiameterOfBinaryTree {
      * @param root
      * @return
      */
-    public static int diameterOfBinaryTree(TreeNode root) {
-        int[] diameter = new int[1];
-        calculateHeight(root, diameter);
-        return diameter[0];
+    public int diameterOfBinaryTree(TreeNode root) {
+        calculateHeight(root);
+        return diameter;
     }
 
     /**
      * @param node
-     * @param diameter
      * @return
      */
-    private static int calculateHeight(TreeNode node, int[] diameter) {
+    private int calculateHeight(TreeNode node) {
         if (node == null) return 0;
 
-        int left = calculateHeight(node.left, diameter);
-        int right = calculateHeight(node.right, diameter);
+        int left = calculateHeight(node.left);
+        int right = calculateHeight(node.right);
 
-        diameter[0] = Math.max(diameter[0], left + right);
+        diameter = Math.max(diameter, left + right);
 
         return Math.max(left, right) + 1;
     }
