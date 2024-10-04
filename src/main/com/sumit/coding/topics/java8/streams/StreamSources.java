@@ -1,4 +1,4 @@
-package main.com.sumit.coding.topics.java8.streams;
+package com.sumit.coding.topics.java8.streams;
 
 import java.util.stream.Stream;
 

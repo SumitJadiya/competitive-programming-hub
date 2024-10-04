@@ -1,4 +1,4 @@
-package main.com.sumit.coding.topics.java8.streams;
+package com.sumit.coding.topics.java8.streams;
 
 public class User {
     private int id;
