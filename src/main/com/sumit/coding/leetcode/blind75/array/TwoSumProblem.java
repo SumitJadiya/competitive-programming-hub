@@ -15,28 +15,24 @@ public class TwoSumProblem {
 
     public static void main(String[] args) {
         int[] nums = new int[]{2, 7, 11, 15};
-        int target = 9;
+        int target = 99;
 
         System.out.println(Arrays.toString(new TwoSumProblem().twoSum(nums, target)));
     }
 
     public int[] twoSum(int[] nums, int target) {
-        Map<Integer, Integer> hm = new HashMap<>();
-        int[] result = new int[2];
+        Map<Integer, Integer> numToIndexMap = new HashMap<>();
         int index = 0;
 
         for (int num : nums) {
             int complement = target - num;
-            if (hm.containsKey(complement)) {
-                result[0] = hm.get(complement);
-                result[1] = index;
-            } else {
-                hm.put(num, index);
-            }
+            if (numToIndexMap.containsKey(complement))
+                return new int[]{numToIndexMap.get(complement), index};
 
+            numToIndexMap.put(num, index);
             index++;
         }
 
-        return result;
+        return new int[0];
     }
 }
