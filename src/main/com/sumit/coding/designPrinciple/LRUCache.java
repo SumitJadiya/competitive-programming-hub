@@ -1,4 +1,4 @@
-package main.com.sumit.coding.design;
+package com.sumit.coding.designPrinciple;
 
 import java.util.HashMap;
 import java.util.Map;
