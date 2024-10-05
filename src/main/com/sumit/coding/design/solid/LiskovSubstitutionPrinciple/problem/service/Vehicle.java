@@ -1,4 +1,4 @@
-package com.sumit.coding.design.solid.LiskovSubstitutionPrinciple.problem;
+package com.sumit.coding.design.solid.LiskovSubstitutionPrinciple.problem.service;
 
 public class Vehicle {
     public Integer getNumberOfWheels() {

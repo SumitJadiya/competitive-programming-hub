@@ -1,5 +1,7 @@
 package com.sumit.coding.design.solid.DependencyInversionPrinciple.solution;
 
+import com.sumit.coding.design.solid.DependencyInversionPrinciple.solution.service.Engine;
+
 public class Car {
     private Engine engine;
 

@@ -1,5 +1,10 @@
 package com.sumit.coding.design.solid.DependencyInversionPrinciple.solution;
 
+import com.sumit.coding.design.solid.DependencyInversionPrinciple.solution.service.Engine;
+import com.sumit.coding.design.solid.DependencyInversionPrinciple.solution.service.impl.DieselEngine;
+import com.sumit.coding.design.solid.DependencyInversionPrinciple.solution.service.impl.ElectricEngine;
+import com.sumit.coding.design.solid.DependencyInversionPrinciple.solution.service.impl.PetrolEngine;
+
 public class MainClass {
     public static void main(String[] args) {
         // Injecting different engine types into the Car

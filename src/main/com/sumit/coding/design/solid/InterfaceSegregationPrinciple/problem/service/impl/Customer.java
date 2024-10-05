@@ -1,4 +1,6 @@
-package com.sumit.coding.design.solid.InterfaceSegregationPrinciple.problem;
+package com.sumit.coding.design.solid.InterfaceSegregationPrinciple.problem.service.impl;
+
+import com.sumit.coding.design.solid.InterfaceSegregationPrinciple.problem.service.RestaurantUser;
 
 public class Customer implements RestaurantUser {
     @Override
