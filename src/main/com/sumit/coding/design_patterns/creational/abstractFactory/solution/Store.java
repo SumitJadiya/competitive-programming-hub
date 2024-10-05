@@ -1,23 +1,11 @@
 package com.sumit.coding.design_patterns.creational.abstractFactory.solution;
 
-import com.sumit.coding.design_patterns.creational.abstractFactory.solution.factory.PizzaFactory;
 import com.sumit.coding.design_patterns.creational.abstractFactory.solution.factory.ProductFactory;
 import com.sumit.coding.design_patterns.creational.abstractFactory.solution.factory.impl.ItalianProductFactory;
 import com.sumit.coding.design_patterns.creational.abstractFactory.solution.product.Drink;
 import com.sumit.coding.design_patterns.creational.abstractFactory.solution.product.Pizza;
 
 public class Store {
-
-    public void orderPizza(String type) {
-        Pizza pizza = PizzaFactory.createPizza(type);
-
-        if (pizza != null) {
-            pizza.prepare();
-            pizza.bake();
-            pizza.cut();
-            pizza.box();
-        }
-    }
 
     public static void main(String[] args) {
         ProductFactory factory = new ItalianProductFactory(); // Choose Italian product family
