@@ -1,5 +1,17 @@
 The **Blind 75** list is a popular set of 75 coding problems that cover key data structures and algorithms frequently asked in coding interviews. Solving these problems requires familiarity with various **coding patterns** (not to be confused with design patterns). Here is a breakdown of some of the most common coding patterns that are essential for tackling these problems effectively:
 
+### 0. **Substring Problem Pattern**
+
+- **Description**: The Substring Problem Pattern involves finding specific substrings within a larger string based on given criteria. This pattern often requires checking the presence, length, or characteristics of substrings. It frequently employs techniques like the sliding window and two pointers to efficiently explore all possible substrings.
+- **Common Problems**:
+  - Longest Substring Without Repeating Characters 
+  - Find All Anagrams in a String 
+  - Minimum Window Substring 
+  - Substring with Concatenation of All Words 
+  - Count Distinct Substrings
+- **Usage**: This pattern is particularly useful when dealing with strings, where the goal is to find substrings that meet certain conditions. It can involve checking for unique characters, specific character counts, or patterns within substrings.
+- **Solution Template** : https://leetcode.com/problems/minimum-window-substring/solutions/26808/Here-is-a-10-line-template-that-can-solve-most-'substring'-problems/
+
 ### 1. **Two Pointers Pattern**
 
 - **Description**: This pattern involves using two pointers to solve problems where the array or list needs to be traversed from both ends (either from the start and end or using two pointers moving at different speeds).
@@ -9,6 +21,7 @@ The **Blind 75** list is a popular set of 75 coding problems that cover key data
     - Container with Most Water
     - Palindrome problems
 - **Usage**: Useful for arrays, linked lists, or strings where you need to work with pairs or subarrays.
+- **Solution Template** : https://leetcode.com/discuss/study-guide/1688903/Solved-all-two-pointers-problems-in-100-days
 
 ### 2. **Sliding Window Pattern**
 
@@ -19,6 +32,7 @@ The **Blind 75** list is a popular set of 75 coding problems that cover key data
     - Minimum Window Substring
     - Longest Substring with K Distinct Characters
 - **Usage**: Efficient for problems involving contiguous subarrays or substrings. Can reduce the time complexity to O(n) from O(n²) in brute force solutions.
+- **Solution Template** : https://leetcode.com/problems/frequency-of-the-most-frequent-element/solutions/1175088/C++-Maximum-Sliding-Window-Cheatsheet-Template/
 
 ### 3. **Fast and Slow Pointers (Tortoise and Hare)**
 
@@ -29,6 +43,7 @@ The **Blind 75** list is a popular set of 75 coding problems that cover key data
     - Happy Number
     - Reorder List
 - **Usage**: Most useful for detecting cycles in linked lists or arrays and finding middle elements.
+- - **Solution Template**
 
 ### 4. **Merge Intervals Pattern**
 
@@ -39,6 +54,7 @@ The **Blind 75** list is a popular set of 75 coding problems that cover key data
     - Meeting Rooms II
     - Non-overlapping Intervals
 - **Usage**: Works well when you need to process or merge ranges, time slots, or other interval-based data.
+- **Solution Template**
 
 ### 5. **Cyclic Sort Pattern**
 
@@ -49,6 +65,7 @@ The **Blind 75** list is a popular set of 75 coding problems that cover key data
     - Find the Duplicate Number
     - First Missing Positive
 - **Usage**: Works for problems involving finding missing numbers, duplicates, or where sorting a range of numbers is necessary.
+- **Solution Template**
 
 ### 6. **In-place Reversal of a Linked List**
 
@@ -59,6 +76,7 @@ The **Blind 75** list is a popular set of 75 coding problems that cover key data
     - Reverse Linked List II
     - Rotate List
 - **Usage**: This is efficient for problems where you need to reverse portions of a linked list.
+- **Solution Template**
 
 ### 7. **Tree Traversal Pattern**
 
@@ -69,6 +87,7 @@ The **Blind 75** list is a popular set of 75 coding problems that cover key data
     - Lowest Common Ancestor of a Binary Tree
     - Maximum Depth of Binary Tree
 - **Usage**: Important for tree-based problems involving hierarchical data.
+- **Solution Template** : https://leetcode.com/discuss/study-guide/937307/Iterative-or-Recursive-or-DFS-and-BFS-Tree-Traversal-or-In-Pre-Post-and-LevelOrder-or-Views
 
 ### 8. **Binary Search Pattern**
 
@@ -79,6 +98,7 @@ The **Blind 75** list is a popular set of 75 coding problems that cover key data
     - Search in Rotated Sorted Array
     - Median of Two Sorted Arrays
 - **Usage**: Reduces the search space efficiently in O(log n) time by splitting the search range in half.
+- **Solution Template** : https://leetcode.com/discuss/study-guide/786126/Python-Powerful-Ultimate-Binary-Search-Template.-Solved-many-problems
 
 ### 9. **Backtracking Pattern**
 
@@ -89,6 +109,8 @@ The **Blind 75** list is a popular set of 75 coding problems that cover key data
     - N-Queens Problem
     - Word Search
 - **Usage**: Solves combinatorial problems involving decision trees and recursion.
+- **Solution Template 1** : https://medium.com/leetcode-patterns/leetcode-pattern-3-backtracking-5d9e5a03dc26
+- **Solution Template 2** : https://leetcode.com/problems/permutations/solutions/18239/A-general-approach-to-backtracking-questions-in-Java-(Subsets-Permutations-Combination-Sum-Palindrome-Partioning)
 
 ### 10. **Topological Sort / Graph Traversal Pattern**
 
@@ -99,6 +121,7 @@ The **Blind 75** list is a popular set of 75 coding problems that cover key data
     - Number of Connected Components in a Graph
     - Clone Graph
 - **Usage**: Useful for dependency resolution problems or finding cycles in graphs.
+- **Solution Template** : https://leetcode.com/discuss/study-guide/655708/Graph-For-Beginners-Problems-or-Pattern-or-Sample-Solutions
 
 ### 11. **Dynamic Programming (DP) Pattern**
 
@@ -110,6 +133,8 @@ The **Blind 75** list is a popular set of 75 coding problems that cover key data
     - 0/1 Knapsack
     - Maximum Subarray
 - **Usage**: Most effective for optimization problems where brute force is inefficient and subproblems overlap.
+- **Solution Template 1** : https://leetcode.com/discuss/study-guide/458695/Dynamic-Programming-Patterns
+- **Solution Template 2** : https://leetcode.com/discuss/study-guide/1437879/Dynamic-Programming-Patterns
 
 ### 12. **Greedy Pattern**
 
@@ -120,6 +145,7 @@ The **Blind 75** list is a popular set of 75 coding problems that cover key data
     - Partition Labels
     - Minimum Number of Platforms Required
 - **Usage**: Works well when locally optimal choices lead to globally optimal solutions.
+- **Solution Template**
 
 ### 13. **Flood Fill / BFS-DFS Traversal Pattern**
 
@@ -130,6 +156,8 @@ The **Blind 75** list is a popular set of 75 coding problems that cover key data
     - Surrounded Regions
     - Word Ladder
 - **Usage**: Common in graph traversal and grid-based problems.
+- **Solution Template 1** : https://medium.com/leetcode-patterns/leetcode-pattern-1-bfs-dfs-25-of-the-problems-part-1-519450a84353
+- **Solution Template 2** : https://medium.com/leetcode-patterns/leetcode-pattern-2-dfs-bfs-25-of-the-problems-part-2-a5b269597f52
 
 ### 14. **Union-Find / Disjoint Set Pattern**
 
@@ -139,11 +167,27 @@ The **Blind 75** list is a popular set of 75 coding problems that cover key data
     - Redundant Connection
     - Graph Valid Tree
 - **Usage**: Very useful for problems involving connectivity or merging sets.
+- **Solution Template** : 
+
+### 15. **Monotonic Stack Pattern**
+
+- **Description**: A monotonic stack is a data structure that maintains its elements in a sorted order (either monotonically increasing or decreasing) while allowing efficient access and modification. This pattern is particularly useful for solving problems that require tracking the next or previous greater or smaller elements in a list or array.
+- **Common Problems**:
+	- Next Greater Element
+	- Previous Greater Element
+	- Largest Rectangle in Histogram
+	- Daily Temperatures
+	- Trapping Rain Water
+- **Usage**: Monotonic stacks are particularly useful in scenarios where you need to efficiently find elements that satisfy specific ordering conditions relative to others. They allow you to efficiently manage elements as you iterate through an array, reducing the need for nested loops.
+- **Solution Template** : https://leetcode.com/discuss/study-guide/2347639/A-comprehensive-guide-and-template-for-monotonic-stack-based-problems
+
+
 
 ---
 
 ### Summary of Coding Patterns to Solve Blind 75 Problems:
 
+0. **Substring Problem**
 1. **Two Pointers**
 2. **Sliding Window**
 3. **Fast and Slow Pointers**
@@ -158,5 +202,12 @@ The **Blind 75** list is a popular set of 75 coding problems that cover key data
 12. **Greedy**
 13. **Flood Fill / DFS-BFS**
 14. **Union-Find**
+15. **Monotonic Stack Pattern**
 
 These patterns provide a strong foundation for solving the diverse set of problems in the **Blind 75** list. By mastering these, you can approach a variety of algorithmic problems with a structured methodology.
+
+----
+
+Important References :
+- String Important Questions: https://leetcode.com/discuss/study-guide/2001789/Collections-of-Important-String-questions-Pattern
+- Important Coding patterns: https://hackernoon.com/14-patterns-to-ace-any-coding-interview-question-c5bb3357f6ed
