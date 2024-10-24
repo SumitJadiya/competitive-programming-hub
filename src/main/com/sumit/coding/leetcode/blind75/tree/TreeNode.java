@@ -7,6 +7,7 @@ import java.util.ArrayList;
 import java.util.LinkedList;
 import java.util.List;
 import java.util.Queue;
+import java.util.stream.Collectors;
 
 @Setter
 @Getter
@@ -84,6 +85,14 @@ public class TreeNode {
         }
 
         return result;
+    }
+
+    public static List<Integer> print_using_bfs_flatResult(TreeNode root) {
+        List<List<Integer>> result = new ArrayList<>();
+
+        result = print_using_bfs(root);
+
+        return result.stream().flatMap(List::stream).collect(Collectors.toList());
     }
 
     @Override
