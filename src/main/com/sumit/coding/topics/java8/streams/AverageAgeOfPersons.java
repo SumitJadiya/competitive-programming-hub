@@ -5,10 +5,9 @@ import lombok.Getter;
 
 import java.util.List;
 
+// Calculate the average age of a list of Person objects using Java streams.
 public class AverageAgeOfPersons {
-
-//    Calculate the average age of a list of Person objects using Java streams.
-
+    
     public static void main(String[] args) {
         List<Person> persons = List.of(
                 new Person("Virat", 35),
