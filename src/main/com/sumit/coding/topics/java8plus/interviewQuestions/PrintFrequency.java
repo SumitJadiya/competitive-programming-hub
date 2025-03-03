@@ -1,4 +1,4 @@
-package main.com.sumit.coding.topics.java8.interviewQuestions;
+package com.sumit.coding.topics.java8plus.interviewQuestions;
 
 import java.util.HashMap;
 import java.util.List;

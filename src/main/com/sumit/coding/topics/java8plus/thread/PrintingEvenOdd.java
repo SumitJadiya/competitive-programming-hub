@@ -1,4 +1,4 @@
-package com.sumit.coding.topics.java8.thread;
+package com.sumit.coding.topics.java8plus.thread;
 
 /*
  * 2 threads
