@@ -38,23 +38,19 @@ public class IntervalListIntersectionsProblem {
         int i = 0, j = 0;
         int n = intervalLista.length, m = intervalListb.length;
 
-        int[] curr = new int[2];
-
         while (i < n && j < m) {
-            curr[0] = Math.max(intervalLista[i][0], intervalListb[j][0]);
-            curr[1] = Math.min(intervalLista[i][1], intervalListb[j][1]);
+            int start = Math.max(intervalLista[i][0], intervalListb[j][0]);
+            int end = Math.min(intervalLista[i][1], intervalListb[j][1]);
 
-            if (curr[0] <= curr[1])
-                intersectionList.add(curr);
+            if (start <= end)
+                intersectionList.add(new int[]{start, end});
 
             if (intervalLista[i][1] < intervalListb[j][1])
                 i++;
             else
                 j++;
-
-            curr = new int[2];
         }
 
-        return intersectionList.toArray(new int[intersectionList.size()][]);
+        return intersectionList.toArray(new int[0][]);
     }
 }
