@@ -43,6 +43,21 @@ public class TernaryTreePathsProblem {
         }
     }
 
+    // Space Efficient Solution
+    private static void dfs_v2 (Node<Integer> root, List<String> path, List<String> res) {
+        path.add(String.valueOf(root.val));
+
+        if(root.children.isEmpty()) {
+            res.add(String.join("->", path));
+        } else {
+            for(Node<Integer> child : root.children) {
+                dfs(child, path, res);
+            }
+        }
+
+        path.remove(path.size() - 1);
+    }
+
     // this function builds a tree from input; you don't have to modify it
     public static <T> Node<T> buildTree(Iterator<String> iter, Function<String, T> f) {
         String val = iter.next();
