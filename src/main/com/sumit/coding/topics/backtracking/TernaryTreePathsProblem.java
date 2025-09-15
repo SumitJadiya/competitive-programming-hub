@@ -38,7 +38,9 @@ public class TernaryTreePathsProblem {
         } else {
             for (Node<Integer> child : root.children) {
                 List<String> pathCopy = new ArrayList<>(path);
-                dfs(child, pathCopy, res);
+                if (child != null) {
+                    dfs(child, pathCopy, res);
+                }
             }
         }
     }
@@ -51,7 +53,9 @@ public class TernaryTreePathsProblem {
             res.add(String.join("->", path));
         } else {
             for(Node<Integer> child : root.children) {
-                dfs(child, path, res);
+                if (child != null) {
+                    dfs(child, path, res);
+                }
             }
         }
 
