@@ -18,7 +18,7 @@ import java.util.List;
 public class FindTheNumberOfIslandsProblem {
 
     @AllArgsConstructor
-    static class Coordinate {
+    private static class Coordinate {
         int r;
         int c;
     }

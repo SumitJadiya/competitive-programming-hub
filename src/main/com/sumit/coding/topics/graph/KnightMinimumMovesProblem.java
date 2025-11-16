@@ -14,7 +14,7 @@ public class KnightMinimumMovesProblem {
 
     @AllArgsConstructor
     @EqualsAndHashCode
-    static class Coordinate {
+    private static class Coordinate {
         int r;
         int c;
     }
@@ -23,7 +23,7 @@ public class KnightMinimumMovesProblem {
         return bfs(new Coordinate(0, 0), x, y);
     }
 
-    public static int bfs(Coordinate root, int x, int y) {
+    private static int bfs(Coordinate root, int x, int y) {
         ArrayDeque<Coordinate> queue = new ArrayDeque<>();
         queue.add(root);
         Set<Coordinate> visited = new HashSet<>();

@@ -11,7 +11,7 @@ import java.util.stream.Collectors;
 public class FloodFillGraphProblem {
 
     @AllArgsConstructor
-    static class Coordinate {
+    private static class Coordinate {
         int r;
         int c;
     }
