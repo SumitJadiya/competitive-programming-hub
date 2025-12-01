@@ -4,7 +4,7 @@ import java.util.*;
 
 public class TopologicalSort {
 
-    public static <T> List<T> topoSort(Map<T, List<T>> graph) {
+    private static <T> List<T> topoSort(Map<T, List<T>> graph) {
         List<T> res = new ArrayList<>();
         Queue<T> queue = new ArrayDeque<>();
         Map<T, Integer> inDegree = findInDegree(graph);
@@ -28,7 +28,7 @@ public class TopologicalSort {
         return (graph.size() == res.size()) ? res : null;
     }
 
-    public static <T> Map<T, Integer> findInDegree(Map<T, List<T>> graph) {
+    private static <T> Map<T, Integer> findInDegree(Map<T, List<T>> graph) {
         Map<T, Integer> inDegree = new HashMap<>();
 
         graph.forEach((node, neighbors) -> {
